@@ -6,13 +6,13 @@ ul {
 }
 
 /* Layout */
-#line-up {
+#lineup {
   column-count: 2;
   column-gap: 1%;
   list-style: none;
   text-align: center;
 }
-#line-up > li {
+#lineup > li {
   display: inline-block;
 }
 
