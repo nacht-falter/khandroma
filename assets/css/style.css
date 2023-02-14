@@ -1,0 +1,19 @@
+/* General rules */
+
+/* Typography */
+
+/* Images */
+.portrait-group {
+  width: 100vw;
+}
+
+.portrait-single {
+  width: 20vw;
+  height: 20vw;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#portrait-til {
+  background-image: url(../img/til.png);
+}
