@@ -10,8 +10,11 @@
 .portrait-single {
   width: 20vw;
   height: 20vw;
-  display: inline-block;
+  display: block;
   border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 140% 140%;
 }
 
 #portrait-til {
