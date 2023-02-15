@@ -1,4 +1,7 @@
 /* General rules */
+* {
+  box-sizing: border-box;
+}
 body,
 ul {
   margin: 0;
