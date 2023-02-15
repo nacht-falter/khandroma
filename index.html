@@ -26,9 +26,9 @@
   </header>
   <main>
     <section id="about">
+      <h2>About</h2>
       <div class="flex-container">
-        <div class="flex-item" aria-label="Text content for about section">
-          <h2>About</h2>
+        <div class="flex-item-left" aria-label="Text content for about section">
           <p>Khándroma is a groove-oriented, instrumental band from Freiburg, Germany. The band‘s music blends elements
             from
             jazz, progressive rock, funk and metal with minimalistic, repeating patterns, creating a unique sound and
@@ -54,9 +54,11 @@
             out
             for <a href="#news">upcoming show dates</a>.</p>
         </div>
-        <div class="flex-item">
-          <img src="assets/img/khandroma_landscape.png" class="portrait-group"
-            alt="Portrait of the four musicians of Khándroma">
+        <div class="flex-item-right">
+          <picture>
+            <source media="(min-width:1000px)" srcset="assets/img/khandroma_portrait.png">
+            <img class="portrait-group" src="assets/img/khandroma_landscape.png" alt="Portrait of the four musicians of Khándroma">
+          </picture>
         </div>
       </div>
       <h3>Musicians</h3>
