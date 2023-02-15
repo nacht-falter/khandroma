@@ -5,6 +5,12 @@ ul {
   padding: 0;
 }
 
+/* Colors */
+body {
+  background-color: #111;
+  color: #eee;
+}
+
 /* Layout */
 #lineup {
   column-count: 2;
@@ -13,6 +19,9 @@ ul {
   text-align: center;
 }
 #lineup > li {
+  width: 100%;
+}
+#lineup li > span {
   display: inline-block;
 }
 
