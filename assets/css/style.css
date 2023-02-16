@@ -3,10 +3,15 @@
   box-sizing: border-box;
   text-align: justify;
 }
+
 body,
 ul {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 /* Colors */
@@ -17,9 +22,16 @@ body {
 
 /* Layout */
 /* flex layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php */
+.main-section {
+  padding: 2vh 10vw;
+  margin: 2vh auto;
+  background-color: rgb(153, 77, 153);
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2%;
 }
 
 .flex-item {
@@ -28,13 +40,12 @@ body {
 
 @media screen and (min-width: 600px) {
   .flex-item {
-    flex: 50%;
+    flex: 48%;
   }
 }
-/* Navigation */
 
+/* Navigation */
 #social ul {
-  list-style: none;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -47,14 +58,22 @@ body {
 /* Typography */
 
 /* Images */
-.group-portrait {
+.group-portrait-small {
   width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-  .group-portrait {
-    float: right;
-    width: 50%;
-    max-width: 500px;
+  .group-portrait-large {
+    background: url("../img/khandroma_portrait.png") no-repeat center center / auto 100%;
+  }
+
+  .group-portrait-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-portrait-large {
+    background: url("../img/khandroma_portrait.png") no-repeat center center / 100% auto;
   }
 }
