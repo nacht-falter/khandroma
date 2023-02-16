@@ -1,6 +1,7 @@
 /* General rules */
 * {
   box-sizing: border-box;
+  text-align: justify;
 }
 body,
 ul {
@@ -19,26 +20,15 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
-.flex-item-left,
-.flex-item-right,
 .flex-item {
   flex: 100%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .flex-item {
     flex: 50%;
-  }
-
-  .flex-item-left {
-    flex: 70%;
-  }
-
-  .flex-item-right {
-    flex: 30%;
   }
 }
 
@@ -60,30 +50,4 @@ body {
 /* Images */
 .full-width-image {
   width: 100%;
-}
-
-.portrait-single {
-  width: 20vw;
-  height: 20vw;
-  display: block;
-  border-radius: 50%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 140% 140%;
-}
-
-#portrait-til {
-  background-image: url(../img/til.png);
-}
-
-#portrait-johannes {
-  background-image: url(../img/johannes.png);
-}
-
-#portrait-phil {
-  background-image: url(../img/phil.png);
-}
-
-#portrait-moritz {
-  background-image: url(../img/moritz.png);
 }
