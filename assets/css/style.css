@@ -32,22 +32,21 @@ body {
   }
 }
 
-#lineup {
-  column-count: 2;
-  column-gap: 1%;
+#social ul {
+  display: flex;
   list-style: none;
-  text-align: center;
 }
-#lineup > li {
-  width: 100%;
-}
-#lineup li > span {
-  display: inline-block;
-}
-
 /* Typography */
 
 /* Images */
-.full-width-image {
+.group-portrait {
   width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .group-portrait {
+    float: right;
+    width: 50%;
+    max-width: 500px;
+  }
 }

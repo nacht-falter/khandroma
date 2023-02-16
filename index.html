@@ -131,19 +131,29 @@
     <section id="image"></section>
     <section id="contact">
       <h2>Get in Touch</h2>
-        <form method="post" action="https://formdump.codeinstitute.net/"> <!-- This action will have to be replaced in a final version -->
-        <input type="email" name="email" id="email" aria-label="Enter email address" placeholder="Your email address"
-          required>
-        <input type="textarea" name="message" id="message" aria-label"Leave us a message"
-          placeholder="Leave us a message. We'll be in touch!">
-        <input type="submit" name="submit" value="Send">
-      </form>
-      <h3 id="subscribe">Subscribe to our Mailing List</h3>
-        <form method="post" action"https://formdump.codeinstitute.net/">
-          <input type="email" name="subscribe" id="subscribe" aria-label="Enter email address to subscribe to our mailing list" placeholder="Your email address" required>
-          <input type="submit" value="Subscribe">
-        </form>
-      <h3>Write to Us!</h3>
+      <div class="flex-container">
+        <div class="flex-item">
+          <form method="post" action="https://formdump.codeinstitute.net/">
+              <h3>Leave us a message</h3>
+            <!-- The form action will have to be replaced before official release of the website -->
+            <input type="email" name="email" id="email" aria-label="Enter email address"
+              placeholder="Your email address" required>
+            <textarea name="message" id="message" aria-label"Leave us a message">Leave us a message. We'll be in
+              touch!</textarea>
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </div>
+        <div class="flex-item">
+          <h3 id="subscribe">Subscribe to our Mailing List</h3>
+          <form method="post" action="https://formdump.codeinstitute.net/">
+            <!-- The form action will have to be replaced before official release of the website -->
+            <input type="email" name="subscribe" id="subscribe"
+              aria-label="Enter email address to subscribe to our mailing list" placeholder="Your email address"
+              required>
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
