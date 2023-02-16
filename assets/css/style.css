@@ -27,17 +27,46 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
 }
 
-.flex-item {
+.flex-item,
+.flex-item-60,
+.flex-item-40 {
   flex: 100%;
+  padding: 2% 2% 0 0;
 }
 
 @media screen and (min-width: 600px) {
   .flex-item {
-    flex: 48%;
+    flex: 50%;
   }
+
+  .flex-item-60 {
+    flex: 60%;
+  }
+
+  .flex-item-40 {
+    flex: 40%;
+  }
+}
+/* Header */
+header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hero image layout adapted from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 /* Navigation */
@@ -70,6 +99,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .group-portrait-large {
-    background: url("../img/khandroma_portrait.png") no-repeat center center / 100% auto;
+    background: url("../img/khandroma_portrait.png") no-repeat center 40% / 100% auto;
   }
 }
