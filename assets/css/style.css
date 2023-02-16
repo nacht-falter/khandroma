@@ -2,10 +2,6 @@
 * {
   box-sizing: border-box;
   text-align: justify;
-}
-
-body,
-ul {
   margin: 0;
   padding: 0;
 }
