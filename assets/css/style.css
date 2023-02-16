@@ -23,11 +23,16 @@ body {
 }
 
 .flex-item-left,
-flex-item-right {
+.flex-item-right,
+.flex-item {
   flex: 100%;
 }
 
 @media screen and (min-width: 1000px) {
+  .flex-item {
+    flex: 50%;
+  }
+
   .flex-item-left {
     flex: 70%;
   }
