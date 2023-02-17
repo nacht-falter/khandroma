@@ -61,6 +61,16 @@ header {
 }
 
 /* Hero image layout adapted from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+#site-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
 .hero-video {
   position: absolute;
   top: 50%;
@@ -180,6 +190,19 @@ input#hamburger {
 }
 
 /* Typography */
+#site-title h1,
+h2 {
+  text-shadow: 0 0 20px #000;
+}
+
+#site-title > h1 {
+  font-size: 15vw;
+  margin-bottom: 2vh;
+}
+
+#site-title > h2 {
+  font-size: 5vw;
+}
 
 /* Images */
 .group-portrait-small {
