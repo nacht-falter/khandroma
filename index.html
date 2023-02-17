@@ -16,15 +16,24 @@
 
 <body>
   <header>
-    <nav>
-      <ul id="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News & Upcoming Shows</a></li>
-        <li><a href="#listen">Listen</a></li>
-        <li><a href="#watch">Watch</a></li>
-        <li><a href="#contact">Get in touch</a></li>
-      </ul>
-    </nav>
+    <div>
+      <!-- Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html -->
+      <input type="checkbox" id="hamburger">
+      <label for="hamburger" class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <nav class="main-nav">
+        <ul id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News & Upcoming Shows</a></li>
+          <li><a href="#listen">Listen</a></li>
+          <li><a href="#watch">Watch</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
     <section id="hero"></section>
   </header>
   <main>
