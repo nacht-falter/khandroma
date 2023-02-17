@@ -14,10 +14,18 @@ li {
   list-style: none;
 }
 
-/* Colors */
 body {
   background-color: #111;
   color: #eee;
+}
+
+a {
+  color: #cf268a;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 /* Layout */
@@ -53,6 +61,7 @@ body {
     flex: 40%;
   }
 }
+
 /* Header */
 header {
   text-align: center;
@@ -71,7 +80,7 @@ header {
 
 .hero {
   position: absolute;
-  background-image: radial-gradient(#555, #000);
+  background-image: radial-gradient(#391635, #000);
   background-color: black;
   top: 50%;
   left: 50%;
@@ -114,9 +123,17 @@ header {
 }
 
 #menu li {
-  margin: 0 auto;
+  margin: 1vh auto;
 }
 
+#menu a {
+  color: white;
+}
+
+#menu a:hover {
+  color: #cf268a;
+  border: none;
+}
 /* Hamburger icon layout and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
   display: block;
@@ -175,13 +192,10 @@ input#hamburger {
   background-color: #111;
   padding: 10px 10px 0 10px;
 }
-.go-up a {
-  color: #fff;
-}
 
 .go-down {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   right: 0;
   width: 50px;
@@ -202,8 +216,15 @@ input#hamburger {
   }
 }
 
+.go-up a,
 .go-down a {
   color: #fff;
+}
+
+.go-up a:hover,
+.go-down a:hover {
+  color: #cf268a;
+  border: none;
 }
 
 #social ul {
