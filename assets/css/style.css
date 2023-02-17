@@ -42,6 +42,7 @@ li {
 a {
   color: #cf268a;
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 a:hover {
@@ -204,16 +205,23 @@ input#hamburger {
   transform: translateY(-12px) rotate(45deg);
 }
 
-.go-up {
+.go-up a {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  font-size: 250%;
-  background-color: #111;
-  padding: 10px 10px 0 10px;
+  font-size: 170%;
+  padding: 10px 12px 4px 12px;
+  color: #fff;
+  background-color: #cf268a;
+  box-shadow: 1px 1px 4px #111;
+  border-radius: 50%;
 }
 
-.go-down {
+.go-up a:hover {
+  background: #222;
+}
+
+.go-down a {
   position: absolute;
   z-index: 3;
   left: 0;
@@ -222,6 +230,7 @@ input#hamburger {
   margin: 0 auto;
   padding: 10px;
   font-size: 150%;
+  color: #fff;
   text-align: center;
   /* CSS animation adapted from https://www.w3schools.com/css/css3_animations.asp */
   animation: scroll-arrow 1s alternate infinite ease-out;
@@ -236,15 +245,9 @@ input#hamburger {
   }
 }
 
-.go-up a,
-.go-down a {
-  color: #fff;
-}
-
-.go-up a:hover,
 .go-down a:hover {
   color: #cf268a;
-  border: none;
+  font-size: 200%;
 }
 
 #social ul {
