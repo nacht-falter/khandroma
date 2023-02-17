@@ -216,8 +216,8 @@ input#hamburger {
 
 .go-up a {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 25px;
+  bottom: 35px;
   font-size: 170%;
   padding: 10px 12px 4px 12px;
   color: #fff;
@@ -266,7 +266,7 @@ input#hamburger {
   font-size: 200%;
 }
 #social li {
-  padding: 5%;
+  padding: 3%;
 }
 
 /* Typography */
