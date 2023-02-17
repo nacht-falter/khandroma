@@ -195,3 +195,8 @@ input#hamburger {
     background: url("../img/khandroma_portrait.png") no-repeat center 40% / 100% auto;
   }
 }
+
+.album-artwork {
+  max-width: 300px;
+  max-height: 300px;
+}
