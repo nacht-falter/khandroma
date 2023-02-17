@@ -1,9 +1,22 @@
+/* Variables */
+:root {
+  --black: #111111;
+  --white: #fffffa;
+  --dark: #333333;
+  --light: #b4b4b4;
+  --red: #cc1d4e;
+  --darkred: #320000;
+  --darkpurple: #391635;
+}
 /* General rules */
 * {
   box-sizing: border-box;
   text-align: justify;
   margin: 0;
   padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 li {
@@ -21,7 +34,7 @@ body {
 .main-section {
   padding: 2vh 10vw;
   margin: 2vh auto;
-  background-color: rgb(153, 77, 153);
+  background-image: linear-gradient(315deg, var(--black), var(--darkpurple));
 }
 
 .flex-container {
@@ -57,7 +70,7 @@ header {
 }
 
 /* Hero image layout adapted from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
-.hero-video {
+#hero {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,11 +80,17 @@ header {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  background: darkgreen;
   z-index: 1;
 }
 
 /* Navigation */
-/* Menu layout adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
+.go-up {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vh;
+  font-size: 300%;
+}
 .main-nav {
   height: auto;
   overflow: hidden;
@@ -101,16 +120,15 @@ header {
   opacity: 1;
 }
 
-/* Hamburger icon layout and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
   display: block;
-  width: 40px;
-  height: 30px;
+  width: 75px;
+  height: 50px;
   position: relative;
   border-radius: 4px;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 1vw;
+  top: 1vh;
   z-index: 3;
 }
 
@@ -120,8 +138,9 @@ input#hamburger {
 
 .hamburger-line {
   position: absolute;
-  height: 3px;
-  width: 40px;
+  left: 10px;
+  height: 4px;
+  width: 55px;
   background: #fff;
   border-radius: 2px;
   display: block;
@@ -130,13 +149,13 @@ input#hamburger {
 }
 
 .hamburger-line:nth-child(1) {
-  top: 0;
-}
-.hamburger-line:nth-child(2) {
   top: 12px;
 }
-.hamburger-line:nth-child(3) {
+.hamburger-line:nth-child(2) {
   top: 24px;
+}
+.hamburger-line:nth-child(3) {
+  top: 36px;
 }
 
 #hamburger:checked + .hamburger .hamburger-line:nth-child(1) {
@@ -149,18 +168,6 @@ input#hamburger {
 
 #hamburger:checked + .hamburger .hamburger-line:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
-}
-
-.go-up {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  font-size: 250%;
-  background-color: #111;
-  padding: 10px 10px 0 10px;
-}
-.go-up a {
-  color: #fff;
 }
 
 #social ul {
