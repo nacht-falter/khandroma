@@ -151,6 +151,13 @@ input#hamburger {
   transform: translateY(-12px) rotate(45deg);
 }
 
+.go-up {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vh;
+  font-size: 300%;
+}
+
 #social ul {
   display: flex;
   width: 100%;
