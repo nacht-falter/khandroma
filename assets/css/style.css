@@ -1,4 +1,4 @@
-/* imports */
+/* Fonts */
 @font-face {
   font-family: "satellite";
   src: url(../fonts/Satellite.otf); /* https://freetypography.com/2011/08/28/free-font-satellite/ */
@@ -25,6 +25,14 @@ body {
   background-color: #111;
   color: #eee;
   font-family: satellite, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 2vh 0;
+}
+
+h3 {
+  margin: 1vh 0;
 }
 
 li {
@@ -57,7 +65,7 @@ a:hover {
 .flex-item-60,
 .flex-item-40 {
   flex: 100%;
-  padding: 2% 2% 0 0;
+  padding: 0 3vw 3vw 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -250,6 +258,16 @@ input#hamburger {
 }
 
 /* Typography */
+h2 {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #fff, transparent) 1;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 110%;
+  letter-spacing: 0.1rem;
+}
+
 #site-title h1,
 h2 {
   text-shadow: 0 0 20px #000;
@@ -263,6 +281,7 @@ h2 {
 
 #site-title h2 {
   font-size: 5vw;
+  border: none;
 }
 
 #site-title h2 span {
