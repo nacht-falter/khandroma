@@ -69,8 +69,9 @@ header {
   position: relative;
 }
 
-.hero-video {
+.hero {
   position: absolute;
+  background-image: radial-gradient(#555, #000);
   background-color: black;
   top: 50%;
   left: 50%;
