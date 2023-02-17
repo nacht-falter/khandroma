@@ -186,6 +186,7 @@ input#hamburger {
   right: 0;
   width: 50px;
   margin: 0 auto;
+  padding: 10px;
   font-size: 150%;
   text-align: center;
   /* CSS animation adapted from https://www.w3schools.com/css/css3_animations.asp */
