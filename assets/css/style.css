@@ -58,6 +58,10 @@ a:hover {
   color: #cf268a;
 }
 
+hr {
+  margin: 2vh 0;
+}
+
 /* Layout */
 .main-section {
   padding: 2vh 10vw;
@@ -274,10 +278,13 @@ label.hamburger:hover .hamburger-line {
 }
 
 /* Typography */
-h2 {
+h2,
+hr {
+  border: none;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, #fff, transparent) 1;
 }
+
 h3 {
   text-transform: uppercase;
   font-size: 110%;

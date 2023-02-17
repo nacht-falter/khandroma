@@ -16,24 +16,22 @@
 
 <body>
   <header id="header">
-    <div>
-      <!-- Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html -->
-      <input type="checkbox" id="hamburger">
-      <label for="hamburger" class="hamburger">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </label>
-      <nav class="main-nav">
-        <ul id="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">News & Upcoming Shows</a></li>
-          <li><a href="#listen">Listen</a></li>
-          <li><a href="#watch">Watch</a></li>
-          <li><a href="#contact">Get in touch</a></li>
-        </ul>
-      </nav>
-    </div>
+    <!-- Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html -->
+    <input aria-label="Button to open main navigation" type="checkbox" id="hamburger">
+    <label for="hamburger" class="hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </label>
+    <nav class="main-nav">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News & Upcoming Shows</a></li>
+        <li><a href="#listen">Listen</a></li>
+        <li><a href="#watch">Watch</a></li>
+        <li><a href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
     <section id="hero" class="hero">
     </section>
     <div aria-label="Site title" id="site-title">
@@ -50,7 +48,8 @@
       <h2>About</h2>
       <div class="flex-container">
         <div class="flex-item-60">
-          <p>Khándroma is a groove-oriented, instrumental band from Freiburg, Germany. Khándroma‘s music blends elements
+          <p class="first-paragraph">Khándroma is a groove-oriented, instrumental band from Freiburg, Germany.
+            Khándroma‘s music blends elements
             from jazz, progressive rock, funk and metal with minimalistic, repeating patterns, creating a unique sound
             and musical style.</p>
           <p>Since its formation in 2007, the band‘s core lineup has consisted of piano, electric bass, and drums, while
@@ -58,16 +57,19 @@
             synthesizer, percussion, and French horn. The current lineup consists of piano, saxophone, electric bass,
             and drums.</p> <img class="group-portrait-small" src="assets/img/khandroma_landscape.png"
             alt="Portrait of the four musicians of Khándroma">
-          <p>Khándroma‘s compositions fluctuate between explosive energy and soothing sonic atmospheres. They foster
+          <p>Khándroma‘s compositions fluctuate between passages of explosive energy and etheral sonic textures. They
+            foster
             awareness, induce trance, or provoke analysis. Khándroma's music is a powerful tool for open-minded
             listeners, offering a complex experience that allows for thinking and feeling, resting and dancing, being
             far away – or right there.</p>
           <p>Khándroma has released four studio albums to date, each with its own unique style, yet all showcasing
             different aspects of the band's signature sound. The latest album – Chrystal Math – presents the unique
             Khándroma style more concisely than previous releases, while still remaining true to the band's distinctive
-            musical identity.<br> Check out the complete <a href="#listen">music catalogue</a>.</p>
-          <p>Khándroma can be heard live on a regular basis in their own rehearsal and concert space in Freiburg. Watch
-            out for <a href="#news">upcoming show dates</a>.</p>
+              musical identity.</p>
+            <p><i class="fa-solid fa-record-vinyl"></i> Check out the complete <a href="#listen">music catalogue</a>.</p>
+          <p>Khándroma can be heard live on a regular basis in their own rehearsal and concert space in Freiburg.</p>
+          <p><i class="fa-solid fa-drum"></i> Watch out for </i><a href="#news">upcoming show dates</a>.</p>
+            <hr>
           <ul>
             <li>Tilman Vogel – Piano</li>
             <li>Johannes Bernet – Saxophone</li>
@@ -83,18 +85,19 @@
     <section id="news" class="main-section">
       <div class="flex-container">
         <div class="flex-item">
-g         <h2>News</h2>
+          <h2>News</h2>
           <p><strong>3 March 2022:</strong></p>
-          <p><strong>New album released</strong>: <em>Chrystal Math</em></p>
+          <p><i class="fa-solid fa-compact-disc"></i><strong> New album released</strong>: <em><a href="#listen"
+                title="Listen">Chrystal Math</em></a></p>
         </div>
         <div class="flex-item">
           <h2>Upcoming Shows</h2>
           <ul>
             <li>No upcoming shows at the moment. Check back soon.</li>
           </ul>
-          <p><a href="#subscribe">Subscribe to our mailing list</a> and never miss anything.</p>
         </div>
       </div>
+        <p><i class="fa-regular fa-paper-plane"></i> <a href="#subscribe">Subscribe to our mailing list</a> and never miss anything.</p>
     </section>
     <section id="image"></section>
     <section id="listen" class="main-section">
