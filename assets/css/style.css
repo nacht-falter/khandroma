@@ -55,9 +55,7 @@ body {
 }
 /* Header */
 header {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+  text-align: center;
 }
 
 /* Hero image layout adapted from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
@@ -73,6 +71,7 @@ header {
 
 .hero-video {
   position: absolute;
+  background-color: black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -176,6 +175,32 @@ input#hamburger {
   padding: 10px 10px 0 10px;
 }
 .go-up a {
+  color: #fff;
+}
+
+.go-down {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: 0 auto;
+  font-size: 150%;
+  text-align: center;
+  /* CSS animation adapted from https://www.w3schools.com/css/css3_animations.asp */
+  animation: scroll-arrow 1s alternate infinite ease-out;
+}
+
+@keyframes scroll-arrow {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+
+.go-down a {
   color: #fff;
 }
 
