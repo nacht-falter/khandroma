@@ -1,3 +1,14 @@
+/* imports */
+@font-face {
+  font-family: "satellite";
+  src: url(../fonts/Satellite.otf); /* https://freetypography.com/2011/08/28/free-font-satellite/ */
+}
+
+@font-face {
+  font-family: "prosto";
+  src: url(../fonts/ProstoOne-Regular.ttf); /* https://fonts.google.com/specimen/Prosto+One */
+}
+
 /* General rules */
 * {
   box-sizing: border-box;
@@ -10,13 +21,14 @@ html {
   scroll-behavior: smooth; /* adapted from https://www.w3schools.com/cssref/pr_scroll-behavior.php */
 }
 
-li {
-  list-style: none;
-}
-
 body {
   background-color: #111;
   color: #eee;
+  font-family: satellite, Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -243,13 +255,18 @@ h2 {
   text-shadow: 0 0 20px #000;
 }
 
-#site-title > h1 {
+#site-title h1 {
   font-size: 15vw;
   margin-bottom: 2vh;
+  letter-spacing: 1vw;
 }
 
-#site-title > h2 {
+#site-title h2 {
   font-size: 5vw;
+}
+
+#site-title h2 span {
+  font-family: prosto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Images */
