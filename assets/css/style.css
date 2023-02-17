@@ -70,6 +70,57 @@ header {
 }
 
 /* Navigation */
+/* Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html */
+label.hamburger {
+  display: block;
+  width: 75px;
+  height: 50px;
+  position: relative;
+  border-radius: 4px;
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+  z-index: 2;
+}
+
+input#hamburger {
+  display: none;
+}
+
+.hamburger-line {
+  position: absolute;
+  left: 10px;
+  height: 4px;
+  width: 55px;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.hamburger-line:nth-child(1) {
+  top: 12px;
+}
+.hamburger-line:nth-child(2) {
+  top: 24px;
+}
+.hamburger-line:nth-child(3) {
+  top: 36px;
+}
+
+#hamburger:checked + .hamburger .hamburger-line:nth-child(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+
+#hamburger:checked + .hamburger .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger:checked + .hamburger .hamburger-line:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
 #social ul {
   display: flex;
   width: 100%;
