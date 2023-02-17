@@ -70,7 +70,37 @@ header {
 }
 
 /* Navigation */
-/* Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html */
+/* Menu layout adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
+.main-nav {
+  height: auto;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  font-size: 200%;
+  z-index: 1;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu li {
+  margin: 0 auto;
+}
+
+#hamburger:checked + .hamburger + .main-nav {
+  opacity: 1;
+}
+
+/* Hamburger icon layout and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
   display: block;
   width: 75px;
