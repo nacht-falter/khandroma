@@ -25,6 +25,7 @@ body {
   background-color: #111;
   color: #eee;
   font-family: satellite, Arial, Helvetica, sans-serif;
+  font-size: 110%;
 }
 
 h2 {
@@ -35,18 +36,26 @@ h3 {
   margin: 1vh 0;
 }
 
+p {
+  margin: 2vh 0;
+}
+
+p.first-paragraph {
+  margin-top: 0;
+}
+
 li {
   list-style: none;
 }
 
 a {
-  color: #cf268a;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
   transition: all 0.5s;
 }
 
 a:hover {
-  border-bottom: 1px solid #fff;
+  color: #cf268a;
 }
 
 /* Layout */
