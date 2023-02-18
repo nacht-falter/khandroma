@@ -222,7 +222,7 @@ label.hamburger:hover .hamburger-line {
   transform: translateY(-12px) rotate(45deg);
 }
 
-.go-up a {
+a.go-up {
   position: fixed;
   right: 25px;
   bottom: 35px;
@@ -234,11 +234,11 @@ label.hamburger:hover .hamburger-line {
   border-radius: 50%;
 }
 
-.go-up a:hover {
+a.go-up:hover {
   background: #222;
 }
 
-.go-down a {
+a.go-down {
   position: absolute;
   z-index: 3;
   left: 0;
@@ -262,7 +262,7 @@ label.hamburger:hover .hamburger-line {
   }
 }
 
-.go-down a:hover {
+a.go-down:hover {
   color: #cf268a;
   font-size: 200%;
 }
@@ -365,4 +365,7 @@ h2 {
 
 .submit-button:hover {
   background-color: #cf268a;
+}
+
+#image {
 }
