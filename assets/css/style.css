@@ -307,8 +307,20 @@ h2 {
   border: none;
 }
 
-#site-title h2 span {
+#site-title h2 em,
+#news em {
   font-family: prosto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#news li {
+  list-style: circle;
+  margin-top: 1vh;
+  list-style-position: inside;
+}
+
+#news li ul li {
+  list-style: none;
+  margin-left: 2vh;
 }
 
 /* Images */
