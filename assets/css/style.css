@@ -219,8 +219,10 @@ input#hamburger {
   transform-origin: center;
 }
 
-label.hamburger:hover .hamburger-line {
-  background-color: #cf268a;
+@media screen and (min-width: 600px) {
+  label.hamburger:hover .hamburger-line {
+    background-color: #cf268a;
+  }
 }
 
 .hamburger-line:nth-child(1) {
@@ -395,6 +397,7 @@ h2 {
 
 .submit-button {
   background: #fff;
+  color: #111;
   margin-top: 1vh;
   border: none;
   padding: 2px 14px;
