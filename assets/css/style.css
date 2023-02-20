@@ -393,5 +393,67 @@ h2 {
   background-color: #cf268a;
 }
 
-#image {
+section#image {
+  height: 40vh;
+}
+
+.image-section-1 {
+  background-image: url(../img/bass.jpg);
+  animation: image-section-1 60s alternate infinite ease-out;
+}
+.image-section-2 {
+  background-image: url(../img/drums.jpg);
+  animation: image-section-2 60s alternate infinite ease-out;
+}
+.image-section-3 {
+  background-image: url(../img/piano.jpg);
+  animation: image-section-3 60s alternate infinite ease-out;
+}
+.image-section-4 {
+  background-image: url(../img/saxophone.jpg);
+  animation: image-section-4 120s alternate infinite ease-out;
+}
+
+@keyframes image-section-1 {
+  from {
+    background-position: top left;
+    background-size: 200% auto;
+  }
+  to {
+    background-position: bottom right;
+    background-size: 250% auto;
+  }
+}
+
+@keyframes image-section-2 {
+  from {
+    background-position: top right;
+    background-size: 200% auto;
+  }
+  to {
+    background-position: bottom left;
+    background-size: 250% auto;
+  }
+}
+
+@keyframes image-section-3 {
+  from {
+    background-position: center left;
+    background-size: 200% auto;
+  }
+  to {
+    background-position: center right;
+    background-size: 250% auto;
+  }
+}
+
+@keyframes image-section-4 {
+  from {
+    background-position: bottom left;
+    background-size: 200% auto;
+  }
+  to {
+    background-position: top right;
+    background-size: 250% auto;
+  }
 }
