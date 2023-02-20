@@ -431,7 +431,7 @@ h2 {
 
 .divider-image {
   height: 100%;
-  animation: divider-image-zoom alternate infinite ease-in-out;
+  animation: divider-image-zoom 30s alternate infinite ease-in-out;
   background-size: auto 100%;
 }
 
