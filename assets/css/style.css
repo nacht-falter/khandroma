@@ -297,9 +297,11 @@ a.go-down:hover {
   font-size: 200%;
 }
 
+/* Footer */
 #social ul {
   display: flex;
   width: 100%;
+  padding-top: 2vh;
   justify-content: center;
   font-size: 200%;
 }
@@ -307,6 +309,11 @@ a.go-down:hover {
   padding: 3%;
 }
 
+#copyright {
+  text-align: center;
+  margin-top: 1vh;
+  color: #888;
+}
 /* Typography */
 h2,
 hr {
@@ -410,12 +417,12 @@ h2 {
   background-color: #cf268a;
 }
 
-section#image {
+.image-section {
   height: 40vh;
 }
 
 @media screen and (min-width: 600px) {
-  section#image {
+  .image-section {
     height: 70vh;
   }
 }
