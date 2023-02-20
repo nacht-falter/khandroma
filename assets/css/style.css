@@ -342,13 +342,8 @@ h2 {
 
 #news li {
   list-style: circle;
-  margin-top: 1vh;
+  margin-top: 2vh;
   list-style-position: inside;
-}
-
-#news li ul li {
-  list-style: none;
-  margin-left: 2vh;
 }
 
 /* Images */
