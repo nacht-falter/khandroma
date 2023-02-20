@@ -96,7 +96,7 @@ hr {
   }
 
   .main-section {
-    min-height: 100vh;
+    min-height: 0vh;
   }
 }
 
@@ -155,7 +155,7 @@ a.go-down:hover {
   width: 100vw;
   height: 100vh;
   max-height: 0;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +193,7 @@ label.hamburger {
   height: 30px;
   position: relative;
   border-radius: 4px;
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 30px;
   z-index: 3;
@@ -238,6 +238,11 @@ label.hamburger:hover .hamburger-line {
 
 #hamburger:checked + .hamburger .hamburger-line:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
+}
+
+/* This fades the go-up button, when the main navigation menu is open */
+#hamburger:checked + .hamburger + .main-nav + a.go-up {
+  opacity: 0.5;
 }
 
 a.go-up {
