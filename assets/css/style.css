@@ -426,64 +426,33 @@ h2 {
     height: 70vh;
   }
 }
-
+.image-section {
+  animation: image-section 30s alternate infinite ease-in-out;
+}
 .image-section-1 {
   background-image: url(../img/bass.jpg);
-  animation: image-section-1 60s alternate infinite ease-in-out;
+  background-position: center center;
+  animation-direction: alternate-reverse;
 }
 .image-section-2 {
   background-image: url(../img/drums.jpg);
-  animation: image-section-2 60s alternate infinite ease-in-out;
+  background-position: center right;
 }
 .image-section-3 {
   background-image: url(../img/piano.jpg);
-  animation: image-section-3 60s alternate infinite ease-in-out;
+  background-position: bottom center;
+  animation-direction: alternate-reverse;
 }
 .image-section-4 {
   background-image: url(../img/saxophone.jpg);
-  animation: image-section-4 60s alternate infinite ease-in-out;
+  background-position: center right;
 }
 
-@keyframes image-section-1 {
+@keyframes image-section {
   from {
-    background-position: top left;
     background-size: auto 100%;
   }
   to {
-    background-position: 50% 50%;
-    background-size: auto 200%;
-  }
-}
-
-@keyframes image-section-2 {
-  from {
-    background-position: bottom right;
-    background-size: auto 100%;
-  }
-  to {
-    background-position: center center;
-    background-size: auto 200%;
-  }
-}
-
-@keyframes image-section-3 {
-  from {
-    background-position: center left;
-    background-size: auto 100%;
-  }
-  to {
-    background-position: center right;
-    background-size: auto 200%;
-  }
-}
-
-@keyframes image-section-4 {
-  from {
-    background-position: center left;
-    background-size: auto 100%;
-  }
-  to {
-    background-position: bottom right;
     background-size: auto 200%;
   }
 }
