@@ -417,42 +417,46 @@ h2 {
   background-color: #cf268a;
 }
 
-.image-section {
+/* Images */
+.divider-container {
   height: 40vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 600px) {
-  .image-section {
+  .divider-container {
     height: 70vh;
   }
 }
-.image-section {
-  animation: image-section 30s alternate infinite ease-in-out;
-}
-.image-section-1 {
-  background-image: url(../img/bass.jpg);
-  background-position: center center;
-  animation-direction: alternate-reverse;
-}
-.image-section-2 {
-  background-image: url(../img/drums.jpg);
-  background-position: center right;
-}
-.image-section-3 {
-  background-image: url(../img/piano.jpg);
-  background-position: bottom center;
-  animation-direction: alternate-reverse;
-}
-.image-section-4 {
-  background-image: url(../img/saxophone.jpg);
-  background-position: center right;
+
+.divider-image {
+  height: 100%;
+  animation: divider-image-zoom alternate infinite ease-in-out;
+  background-size: auto 100%;
 }
 
-@keyframes image-section {
+.divider-image-1 {
+  background-image: url(../img/bass.jpg);
+  animation-direction: alternate-reverse;
+}
+.divider-image-2 {
+  background-image: url(../img/drums.jpg);
+}
+.divider-image-3 {
+  background-image: url(../img/piano.jpg);
+  animation-direction: alternate-reverse;
+}
+.divider-image-4 {
+  background-image: url(../img/saxophone.jpg);
+}
+
+@keyframes divider-image-zoom {
   from {
-    background-size: auto 100%;
+    transform: scale(1);
+    background-position: top left;
   }
   to {
-    background-size: auto 200%;
+    transform: scale(2);
+    background-position: bottom right;
   }
 }
