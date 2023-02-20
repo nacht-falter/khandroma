@@ -64,7 +64,7 @@ hr {
 
 /* Layout */
 .main-section {
-  padding: 2vh 10vw;
+  padding: 2vh 10vw 3vh 10vw;
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg, #391635, #111) #391635;
 }
