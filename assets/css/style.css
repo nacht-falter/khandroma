@@ -356,9 +356,14 @@ h2 {
   width: 100%;
 }
 
+.group-portrait-large {
+  background: url("../img/khandroma_portrait.jpg") no-repeat center center / auto 100%;
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .group-portrait-large {
-    background: url("../img/khandroma_portrait.jpg") no-repeat center center / auto 100%;
+    display: initial;
   }
 
   .group-portrait-small {
