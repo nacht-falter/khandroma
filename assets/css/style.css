@@ -442,43 +442,43 @@ section#image {
 @keyframes image-section-1 {
   from {
     background-position: top left;
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
   to {
     background-position: 50% 50%;
-    background-size: 200% auto;
+    background-size: auto 200%;
   }
 }
 
 @keyframes image-section-2 {
   from {
     background-position: bottom right;
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
   to {
     background-position: center center;
-    background-size: 200% auto;
+    background-size: auto 200%;
   }
 }
 
 @keyframes image-section-3 {
   from {
     background-position: center left;
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
   to {
     background-position: center right;
-    background-size: 200% auto;
+    background-size: auto 200%;
   }
 }
 
 @keyframes image-section-4 {
   from {
     background-position: center left;
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
   to {
     background-position: bottom right;
-    background-size: 200% auto;
+    background-size: auto 200%;
   }
 }
