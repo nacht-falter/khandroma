@@ -330,13 +330,14 @@ a.go-up {
   background-color: var(--primary-color);
   box-shadow: 1px 1px 4px var(--black);
   border-radius: 50%;
+  z-index: 1;
 }
 
 a.go-up:hover {
   background: var(--darkgrey);
 }
 
-#hamburger:checked + .hamburger + .main-nav + a.go-up {
+#hamburger:checked ~ a.go-up { /* CSS element1~element2 selector found at https://www.w3schools.com/cssref/sel_gen_sibling.php */
   opacity: 0.5; /* This fades out the go-up button, when the main navigation menu is open. */
 }
 
