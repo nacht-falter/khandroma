@@ -318,8 +318,8 @@ a.go-down:hover {
 }
 
 /* ADDITIONAL TYPOGRAPHY */
-h2,
-hr {
+
+.fading-line {
   border: none;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, var(--off-white), transparent) 1;
