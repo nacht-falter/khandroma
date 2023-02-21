@@ -1,4 +1,7 @@
-/* FONTS */
+/*--------------------------------
+FONTS
+--------------------------------*/
+
 @font-face {
   font-family: "satellite";
   src: url(../fonts/Satellite.otf); /* https://freetypography.com/2011/08/28/free-font-satellite/ */
@@ -9,9 +12,11 @@
   src: url(../fonts/ProstoOne-Regular.ttf); /* https://fonts.google.com/specimen/Prosto+One */
 }
 
-/* VARIABLES */
+/*--------------------------------
+VARIABLES
+--------------------------------*/
 :root {
-  /* CSS variable function found at https://www.w3schools.com/css/css3_variables.asp */
+  /* CSS variable functionality found at https://www.w3schools.com/css/css3_variables.asp */
   /* Defining colors to use for the website */
   --primary-color: #cf268a;
   --secondary-color: #391635;
@@ -28,7 +33,7 @@
   --divider-container-height: 40vh;
 }
 
-/* Define main layout variables for responsive layout. Other non-variable media queries at the end of the file */
+/* Define main layout variables for responsive layout (other non-variable media queries at the end of the file) */
 /* This stylesheet adopts a mobile first approach. Breakpoints adopted from https://www.w3schools.com/css/css3_mediaqueries.asp */
 /* Inspiration for using variables for media queries from: https://www.w3schools.com/css/css3_variables_mediaqueries.asp */
 
@@ -74,7 +79,9 @@
   }
 }
 
-/* GENERAL STYLES */
+/*--------------------------------
+GENERAL STYLES
+--------------------------------*/
 * {
   box-sizing: border-box;
   text-align: justify;
@@ -141,7 +148,9 @@ iframe {
   border-radius: 10px;
 }
 
-/* MAIN LAYOUT */
+/*--------------------------------
+MAIN LAYOUT
+--------------------------------*/
 .main-section {
   padding: 2vh var(--main-section-padding) 3vh var(--main-section-padding);
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
@@ -153,7 +162,9 @@ iframe {
   overflow: hidden;
 }
 
-/* FLEXBOX LAYOUT */
+/*--------------------------------
+FLEXBOX LAYOUT
+--------------------------------*/
 /* Flex layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php */
 .flex-container {
   display: flex;
@@ -167,7 +178,9 @@ iframe {
   padding: 0 3vw 3vw 0;
 }
 
-/* HEADER STYLES */
+/*--------------------------------
+HEADER STYLES
+--------------------------------*/
 header {
   text-align: center;
 }
@@ -207,7 +220,9 @@ header {
   }
 }
 
-/* Navigation */
+/*--------------------------------
+Navigation
+--------------------------------*/
 /* Main navigation design adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
 .main-nav {
   height: auto;
@@ -352,7 +367,9 @@ a.go-down:hover {
   }
 }
 
-/* FOOTER */
+/*--------------------------------
+FOOTER
+--------------------------------*/
 #social ul {
   display: flex;
   width: 100%;
@@ -370,7 +387,9 @@ a.go-down:hover {
   color: var(--lightgrey);
 }
 
-/* ADDITIONAL TYPOGRAPHY */
+/*--------------------------------
+ADDITIONAL TYPOGRAPHY
+--------------------------------*/
 .fading-line {
   border: none;
   border-bottom: 1px solid transparent;
@@ -409,7 +428,9 @@ h2 {
   margin: 0 0 0 17px;
 }
 
-/* IMAGE STYLES */
+/*--------------------------------
+IMAGE STYLES
+--------------------------------*/
 .divider-image {
   height: 100%;
   animation: divider-image-zoom 30s alternate infinite ease-in-out;
@@ -459,7 +480,9 @@ h2 {
   width: 100%;
 }
 
-/* FORMS AND BUTTONS */
+/*--------------------------------
+FORMS AND BUTTONS
+--------------------------------*/
 .input {
   display: block;
   margin-top: 1vh;
@@ -499,7 +522,9 @@ legend {
   text-transform: uppercase;
 }
 
-/* ADDITIONAL MEDIA QUERIES */
+/*--------------------------------
+ADDITIONAL MEDIA QUERIES
+--------------------------------*/
 /* Small screens (600px and up)*/
 @media only screen and (min-width: 600px) {
   .divider-image {
