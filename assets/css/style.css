@@ -452,6 +452,13 @@ legend {
 
 /* Very small screens (600px and up)*/
 @media only screen and (min-width: 600px) {
+  .divider-container {
+    height: 30vh;
+  }
+
+  .divider-image {
+    background-size: 100% auto;
+  }
 }
 
 /* Small screens (768px and up) */
@@ -459,6 +466,10 @@ legend {
   .main-section {
     padding-left: 14vw;
     padding-right: 14vw;
+  }
+
+  .divider-container {
+    height: 40vh;
   }
 }
 
@@ -489,6 +500,10 @@ legend {
     flex: 40%;
   }
 
+  .divider-container {
+    height: 50vh;
+  }
+
   /* The next to declarations make the larger group portrait appear next to the text instead of the smaller portrait in the middle of the text */
   .group-portrait-large {
     background: url("../img/khandroma_portrait.jpg") no-repeat top center / 120% auto;
@@ -510,6 +525,10 @@ legend {
     font-size: 2.5vw;
   }
 
+  .divider-container {
+    height: 60vh;
+  }
+
   /* This enables a hover effect for the hamburger icon on larger screens which doesn't work properly on touch screens */
   label.hamburger:hover .hamburger-line {
     background-color: var(--primary-color);
@@ -521,5 +540,9 @@ legend {
   .main-section {
     padding-left: 15vw;
     padding-right: 15vw;
+  }
+
+  .divider-container {
+    height: 62vh;
   }
 }
