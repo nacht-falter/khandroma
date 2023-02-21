@@ -208,24 +208,29 @@
       <h2>Get in Touch</h2>
       <div class="flex-container">
         <div class="flex-item">
-          <h3>Leave us a message</h3>
           <form method="post" action="https://formdump.codeinstitute.net/">
             <!-- The form action will have to be replaced before official release of the website -->
-            <input type="email" name="email" id="email" class="input" aria-label="Enter email address"
-              placeholder="Your email address" required>
-            <textarea name="message" id="message" class="input textarea" aria-label="Leave us a message"
-              placeholder="Leave us a message. We'll be in touch!"></textarea>
-            <input type="submit" name="submit" class="submit-button" value="Send">
+            <fieldset>
+              <legend>Leave us a message</legend>
+              <input type="email" name="email" id="email" class="input" aria-label="Enter email address"
+                placeholder="Your email address" required>
+              <textarea name="message" id="message" class="input textarea" aria-label="Leave us a message"
+                placeholder="Leave us a message. We'll be in touch!"></textarea>
+              <input type="submit" name="submit" class="submit-button" value="Send">
+            </fieldset>
           </form>
         </div>
         <div class="flex-item">
-          <h3 id="subscribe">Subscribe to our Mailing List</h3>
+
           <form method="post" action="https://formdump.codeinstitute.net/">
+            <fieldset>
+            <legend id="subscribe">Subscribe to our Mailing List</legend>
             <!-- The form action will have to be replaced before official release of the website -->
             <input type="email" name="subscribe" id="subscribe" class="input"
               aria-label="Enter email address to subscribe to our mailing list" placeholder="Your email address"
               required>
             <input type="submit" class="submit-button" value="Subscribe">
+            </fieldset> 
           </form>
         </div>
       </div>

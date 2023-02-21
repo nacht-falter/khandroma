@@ -111,6 +111,16 @@ iframe {
   border-radius: 10px;
 }
 
+fieldset {
+  padding: 0 1vh 1vh 1vh;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+legend {
+  text-transform: uppercase;
+}
+
 /* Header */
 header {
   text-align: center;
