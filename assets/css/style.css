@@ -498,10 +498,6 @@ legend {
   .group-portrait-small {
     display: none;
   }
-
-  label.hamburger:hover .hamburger-line {
-    background-color: var(--primary-color);
-  }
 }
 
 /* Large Screens (1200px and up) */
@@ -512,6 +508,11 @@ legend {
 
   #site-title h2 {
     font-size: 2.5vw;
+  }
+
+  /* This enables a hover effect for the hamburger icon on larger screens which doesn't work properly on touch screens */
+  label.hamburger:hover .hamburger-line {
+    background-color: var(--primary-color);
   }
 }
 
