@@ -399,7 +399,6 @@ h2 {
 }
 
 .group-portrait-large {
-  background: url("../img/khandroma_portrait.jpg") no-repeat center center / auto 100%;
   display: none;
 }
 
@@ -450,8 +449,27 @@ legend {
 }
 
 /* MEDIA QUERIES */
-/* This stylesheet adopts a mobile first approach */
-@media screen and (min-width: 600px) {
+/* This stylesheet adopts a mobile first approach. Breakpoints adopted from https://www.w3schools.com/css/css3_mediaqueries.asp */
+
+/* Very small screens (600px and up)*/
+@media only screen and (min-width: 600px) {
+}
+
+/* Small screens (768px and up) */
+@media only screen and (min-width: 768px) {
+  .main-section {
+    padding-left: 14vw;
+    padding-right: 14vw;
+  }
+}
+
+/* Medium screens (992px and up) */
+@media only screen and (min-width: 992px) {
+  .main-section {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+
   .flex-item {
     flex: 50%;
   }
@@ -464,34 +482,30 @@ legend {
     flex: 40%;
   }
 
-  .main-section {
-    min-height: 0vh;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  label.hamburger:hover .hamburger-line {
-    background-color: var(--primary-color);
-  }
-}
-
-@media screen and (min-width: 600px) {
+  /* This makes the larger group portrait next to text appear instead of the smaller portrait in the middle of the text */
   .group-portrait-large {
+    background: url("../img/khandroma_portrait.jpg") no-repeat center center / auto 100%;
     display: initial;
   }
 
   .group-portrait-small {
     display: none;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .group-portrait-large {
-    background: url("../img/khandroma_portrait.jpg") no-repeat center 40% / 100% auto;
+  label.hamburger:hover .hamburger-line {
+    background-color: var(--primary-color);
   }
 }
-@media screen and (min-width: 600px) {
-  .divider-container {
-    height: 70vh;
+
+/* Large Screens (1200px and up) */
+/* 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Very large screens (1400px and up) */
+@media only screen and (min-width: 1400px) {
+  .main-section {
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
