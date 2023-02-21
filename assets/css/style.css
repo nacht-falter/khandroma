@@ -489,10 +489,10 @@ legend {
     flex: 40%;
   }
 
-  /* This makes the larger group portrait next to text appear instead of the smaller portrait in the middle of the text */
+  /* The next to declarations make the larger group portrait appear next to the text instead of the smaller portrait in the middle of the text */
   .group-portrait-large {
-    background: url("../img/khandroma_portrait.jpg") no-repeat center center / auto 100%;
-    display: initial;
+    background: url("../img/khandroma_portrait.jpg") no-repeat top center / 120% auto;
+    display: block;
   }
 
   .group-portrait-small {
