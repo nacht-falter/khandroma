@@ -1,4 +1,4 @@
-/* Fonts */
+/* FONTS */
 @font-face {
   font-family: "satellite";
   src: url(../fonts/Satellite.otf); /* https://freetypography.com/2011/08/28/free-font-satellite/ */
@@ -9,9 +9,9 @@
   src: url(../fonts/ProstoOne-Regular.ttf); /* https://fonts.google.com/specimen/Prosto+One */
 }
 
-/* CSS variables adapted from https://www.w3schools.com/css/css3_variables.asp */
+/* VARIABLES */
 :root {
-  /* Colors */
+  /* CSS variable function found at https://www.w3schools.com/css/css3_variables.asp */
   --primary-color: #cf268a;
   --secondary-color: #391635;
   --black: #111;
@@ -21,7 +21,7 @@
   --lightgrey: #888;
 }
 
-/* General rules */
+/* GENERAL STYLES */
 * {
   box-sizing: border-box;
   text-align: justify;
@@ -30,7 +30,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* adapted from https://www.w3schools.com/cssref/pr_scroll-behavior.php */
+  scroll-behavior: smooth; /* Found at https://www.w3schools.com/cssref/pr_scroll-behavior.php */
 }
 
 body {
@@ -52,6 +52,9 @@ h2 {
 
 h3 {
   margin: 1vh 0;
+  text-transform: uppercase;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
 }
 
 p {
@@ -80,13 +83,24 @@ hr {
   margin: 2vh 0;
 }
 
-/* Layout */
+iframe {
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+/* MAIN LAYOUT */
 .main-section {
   padding: 2vh 10vw 3vh 10vw;
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg, var(--secondary-color), var(--black)) var(--secondary-color);
 }
 
+.divider-container {
+  height: 40vh;
+  overflow: hidden;
+}
+
+/* FLEXBOX LAYOUT */
 /* Flex layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php */
 .flex-container {
   display: flex;
@@ -100,40 +114,7 @@ hr {
   padding: 0 3vw 3vw 0;
 }
 
-@media screen and (min-width: 600px) {
-  .flex-item {
-    flex: 50%;
-  }
-
-  .flex-item-60 {
-    flex: 60%;
-  }
-
-  .flex-item-40 {
-    flex: 40%;
-  }
-
-  .main-section {
-    min-height: 0vh;
-  }
-}
-
-iframe {
-  border: 5px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-}
-
-fieldset {
-  padding: 0 1vh 1vh 1vh;
-  border-radius: 10px;
-  border-width: 1px;
-}
-
-legend {
-  text-transform: uppercase;
-}
-
-/* Header */
+/* HEADER STYLES */
 header {
   text-align: center;
 }
@@ -173,13 +154,8 @@ header {
   }
 }
 
-a.go-down:hover {
-  color: var(--primary-color);
-  font-size: 200%;
-}
-
 /* Navigation */
-/* Menu design adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
+/* Main navigation design adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
 .main-nav {
   height: auto;
   overflow: hidden;
@@ -197,6 +173,7 @@ a.go-down:hover {
   z-index: 2;
 }
 
+/* This makes the main navigation appear, when the hamburger menu icon is clicked */
 #hamburger:checked + .hamburger + .main-nav {
   opacity: 1;
   max-height: 100vh;
@@ -219,7 +196,9 @@ a.go-down:hover {
 #menu a:hover {
   color: var(--primary-color);
 }
-/* Hamburger icon layout and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
+
+/* The following declarations style the hamburger icon and the animation to turn it into an X when clicked. */
+/* Hamburger icon design and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
   display: block;
   width: 40px;
@@ -247,12 +226,6 @@ input#hamburger {
   transform-origin: center;
 }
 
-@media screen and (min-width: 600px) {
-  label.hamburger:hover .hamburger-line {
-    background-color: var(--primary-color);
-  }
-}
-
 .hamburger-line:nth-child(1) {
   top: 0;
 }
@@ -275,11 +248,12 @@ input#hamburger {
   transform: translateY(-12px) rotate(45deg);
 }
 
-/* This fades the go-up button, when the main navigation menu is open */
+/* This fades out the go-up button, when the main navigation menu is open. */
 #hamburger:checked + .hamburger + .main-nav + a.go-up {
   opacity: 0.5;
 }
 
+/* Styles for the buttons to go to the top of the page and to scroll down */
 a.go-up {
   position: fixed;
   right: 25px;
@@ -307,8 +281,13 @@ a.go-down {
   font-size: 150%;
   color: var(--off-white);
   text-align: center;
-  /* CSS animation adapted from https://www.w3schools.com/css/css3_animations.asp */
+  /* CSS animations from https://www.w3schools.com/css/css3_animations.asp */
   animation: scroll-arrow 1s alternate infinite ease-out;
+}
+
+a.go-down:hover {
+  color: var(--primary-color);
+  font-size: 200%;
 }
 
 @keyframes scroll-arrow {
@@ -320,12 +299,7 @@ a.go-down {
   }
 }
 
-a.go-down:hover {
-  color: var(--primary-color);
-  font-size: 200%;
-}
-
-/* Footer */
+/* FOOTER */
 #social ul {
   display: flex;
   width: 100%;
@@ -342,18 +316,13 @@ a.go-down:hover {
   margin-top: 1vh;
   color: var(--lightgrey);
 }
-/* Typography */
+
+/* ADDITIONAL TYPOGRAPHY */
 h2,
 hr {
   border: none;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, var(--off-white), transparent) 1;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 100%;
-  letter-spacing: 0.1rem;
 }
 
 #site-title h1,
@@ -389,7 +358,42 @@ h2 {
   margin: 0 0 0 17px;
 }
 
-/* Images */
+/* IMAGE STYLES */
+.divider-image {
+  height: 100%;
+  animation: divider-image-zoom 30s alternate infinite ease-in-out;
+  background-size: auto 100%;
+}
+
+@keyframes divider-image-zoom {
+  from {
+    transform: scale(1);
+    background-position: top left;
+  }
+  to {
+    transform: scale(2);
+    background-position: bottom right;
+  }
+}
+
+.divider-image-1 {
+  background-image: url(../img/bass.jpg);
+  animation-direction: alternate-reverse;
+}
+
+.divider-image-2 {
+  background-image: url(../img/drums.jpg);
+}
+
+.divider-image-3 {
+  background-image: url(../img/piano.jpg);
+  animation-direction: alternate-reverse;
+}
+
+.divider-image-4 {
+  background-image: url(../img/saxophone.jpg);
+}
+
 .group-portrait-small {
   width: 100%;
 }
@@ -399,29 +403,13 @@ h2 {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .group-portrait-large {
-    display: initial;
-  }
-
-  .group-portrait-small {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .group-portrait-large {
-    background: url("../img/khandroma_portrait.jpg") no-repeat center 40% / 100% auto;
-  }
-}
-
 .album-artwork {
   max-width: 300px;
   max-height: 300px;
   width: 100%;
 }
 
-/* Forms */
+/* FORMS AND BUTTONS */
 .input {
   display: block;
   margin-top: 1vh;
@@ -451,46 +439,59 @@ h2 {
   background-color: var(--primary-color);
 }
 
-/* Images */
-.divider-container {
-  height: 40vh;
-  overflow: hidden;
+fieldset {
+  padding: 0 1vh 1vh 1vh;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+legend {
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+/* This stylesheet adopts a mobile first approach */
+@media screen and (min-width: 600px) {
+  .flex-item {
+    flex: 50%;
+  }
+
+  .flex-item-60 {
+    flex: 60%;
+  }
+
+  .flex-item-40 {
+    flex: 40%;
+  }
+
+  .main-section {
+    min-height: 0vh;
+  }
 }
 
 @media screen and (min-width: 600px) {
+  label.hamburger:hover .hamburger-line {
+    background-color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .group-portrait-large {
+    display: initial;
+  }
+
+  .group-portrait-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-portrait-large {
+    background: url("../img/khandroma_portrait.jpg") no-repeat center 40% / 100% auto;
+  }
+}
+@media screen and (min-width: 600px) {
   .divider-container {
     height: 70vh;
-  }
-}
-
-.divider-image {
-  height: 100%;
-  animation: divider-image-zoom 30s alternate infinite ease-in-out;
-  background-size: auto 100%;
-}
-
-.divider-image-1 {
-  background-image: url(../img/bass.jpg);
-  animation-direction: alternate-reverse;
-}
-.divider-image-2 {
-  background-image: url(../img/drums.jpg);
-}
-.divider-image-3 {
-  background-image: url(../img/piano.jpg);
-  animation-direction: alternate-reverse;
-}
-.divider-image-4 {
-  background-image: url(../img/saxophone.jpg);
-}
-
-@keyframes divider-image-zoom {
-  from {
-    transform: scale(1);
-    background-position: top left;
-  }
-  to {
-    transform: scale(2);
-    background-position: bottom right;
   }
 }
