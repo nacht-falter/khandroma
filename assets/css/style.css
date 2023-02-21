@@ -9,6 +9,18 @@
   src: url(../fonts/ProstoOne-Regular.ttf); /* https://fonts.google.com/specimen/Prosto+One */
 }
 
+/* CSS variables adapted from https://www.w3schools.com/css/css3_variables.asp */
+:root {
+  /* Colors */
+  --primary-color: #cf268a;
+  --secondary-color: #391635;
+  --black: #111;
+  --white: #fff;
+  --off-white: #eee;
+  --darkgrey: #222;
+  --lightgrey: #888;
+}
+
 /* General rules */
 * {
   box-sizing: border-box;
@@ -22,8 +34,8 @@ html {
 }
 
 body {
-  background-color: #111;
-  color: #eee;
+  background-color: var(--black);
+  color: var(--off-white);
   font-family: satellite, Arial, Helvetica, sans-serif;
   font-size: 110%;
 }
@@ -55,13 +67,13 @@ li {
 }
 
 a {
-  color: #fff;
+  color: var(--off-white);
   text-decoration: underline;
   transition: all 0.5s;
 }
 
 a:hover {
-  color: #cf268a;
+  color: var(--primary-color);
 }
 
 hr {
@@ -72,10 +84,10 @@ hr {
 .main-section {
   padding: 2vh 10vw 3vh 10vw;
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
-  background: linear-gradient(135deg, #391635, #111) #391635;
+  background: linear-gradient(135deg, var(--secondary-color), var(--black)) var(--secondary-color);
 }
 
-/* flex layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php */
+/* Flex layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +146,7 @@ header {
   height: 100vh;
   z-index: 1;
   position: relative;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)) transparent;
 }
 
 #hero {
@@ -148,7 +160,7 @@ header {
 .hero {
   width: 100%;
   height: 100%;
-  background: url(../img/chrystal_math_hero.jpg) center center / auto 100% #000;
+  background: url(../img/chrystal_math_hero.jpg) center center / auto 100% var(--black);
   animation: hero 5s forwards ease;
 }
 
@@ -162,7 +174,7 @@ header {
 }
 
 a.go-down:hover {
-  color: #cf268a;
+  color: var(--primary-color);
   font-size: 200%;
 }
 
@@ -200,12 +212,12 @@ a.go-down:hover {
 }
 
 #menu a {
-  color: white;
+  color: var(--off-white);
   text-decoration: none;
 }
 
 #menu a:hover {
-  color: #cf268a;
+  color: var(--primary-color);
 }
 /* Hamburger icon layout and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
@@ -228,7 +240,7 @@ input#hamburger {
   position: absolute;
   height: 3px;
   width: 40px;
-  background-color: #fff;
+  background-color: var(--off-white);
   border-radius: 2px;
   display: block;
   transition: 0.5s;
@@ -237,7 +249,7 @@ input#hamburger {
 
 @media screen and (min-width: 600px) {
   label.hamburger:hover .hamburger-line {
-    background-color: #cf268a;
+    background-color: var(--primary-color);
   }
 }
 
@@ -274,14 +286,14 @@ a.go-up {
   bottom: 35px;
   font-size: 170%;
   padding: 10px 12px 4px 12px;
-  color: #fff;
-  background-color: #cf268a;
-  box-shadow: 1px 1px 4px #111;
+  color: var(--off-white);
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 4px var(--black);
   border-radius: 50%;
 }
 
 a.go-up:hover {
-  background: #222;
+  background: var(--darkgrey);
 }
 
 a.go-down {
@@ -293,7 +305,7 @@ a.go-down {
   margin: 0 auto;
   padding: 10px;
   font-size: 150%;
-  color: #fff;
+  color: var(--off-white);
   text-align: center;
   /* CSS animation adapted from https://www.w3schools.com/css/css3_animations.asp */
   animation: scroll-arrow 1s alternate infinite ease-out;
@@ -309,7 +321,7 @@ a.go-down {
 }
 
 a.go-down:hover {
-  color: #cf268a;
+  color: var(--primary-color);
   font-size: 200%;
 }
 
@@ -328,14 +340,14 @@ a.go-down:hover {
 #copyright {
   text-align: center;
   margin-top: 1vh;
-  color: #888;
+  color: var(--lightgrey);
 }
 /* Typography */
 h2,
 hr {
   border: none;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right, #fff, transparent) 1;
+  border-image: linear-gradient(to right, var(--off-white), transparent) 1;
 }
 
 h3 {
@@ -346,7 +358,7 @@ h3 {
 
 #site-title h1,
 h2 {
-  text-shadow: 0 0 20px #000;
+  text-shadow: 0 0 20px var(--black);
 }
 
 #site-title h1 {
@@ -425,8 +437,8 @@ h2 {
 }
 
 .submit-button {
-  background: #fff;
-  color: #111;
+  background: var(--off-white);
+  color: var(--black);
   margin-top: 1vh;
   border: none;
   padding: 2px 14px;
@@ -436,7 +448,7 @@ h2 {
 }
 
 .submit-button:hover {
-  background-color: #cf268a;
+  background-color: var(--primary-color);
 }
 
 /* Images */
