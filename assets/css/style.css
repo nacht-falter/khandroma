@@ -12,6 +12,7 @@
 /* VARIABLES */
 :root {
   /* CSS variable function found at https://www.w3schools.com/css/css3_variables.asp */
+  /* Defining colors to use for the website */
   --primary-color: #cf268a;
   --secondary-color: #391635;
   --black: #111;
@@ -19,6 +20,58 @@
   --off-white: #eee;
   --darkgrey: #222;
   --lightgrey: #888;
+
+  /* Set default values for main layout elements */
+  --site-title-primary-font-size: 15vw;
+  --site-title-secondary-font-size: 4vw;
+  --main-section-padding: 10vw;
+  --divider-container-height: 40vh;
+}
+
+/* Define main layout variables for responsive layout. Other non-variable media queries at the end of the file */
+/* This stylesheet adopts a mobile first approach. Breakpoints adopted from https://www.w3schools.com/css/css3_mediaqueries.asp */
+/* Inspiration for using variables for media queries from: https://www.w3schools.com/css/css3_variables_mediaqueries.asp */
+
+/* Small screens (600px and up)*/
+@media only screen and (min-width: 600px) {
+  :root {
+    --divider-container-height: 30vh;
+  }
+}
+
+/* Slightly larger screens (768px and up)*/
+@media only screen and (min-width: 768px) {
+  :root {
+    --main-section-padding: 14vw;
+    --divider-container-height: 40vh;
+  }
+}
+
+/* Medium screens (992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --site-title-primary-font-size: 12vw;
+    --site-title-secondary-font-size: 3vw;
+    --main-section-padding: 12vw;
+    --divider-container-height: 50vh;
+  }
+}
+
+/* Large Screens (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --site-title-primary-font-size: 10vw;
+    --site-title-secondary-font-size: 2.5vw;
+    --divider-container-height: 60vh;
+  }
+}
+
+/* Very large screens (1400px and up) */
+@media only screen and (min-width: 1400px) {
+  :root {
+    --main-section-padding: 15vw;
+    --divider-container-height: 62vh;
+  }
 }
 
 /* GENERAL STYLES */
@@ -90,13 +143,13 @@ iframe {
 
 /* MAIN LAYOUT */
 .main-section {
-  padding: 2vh 10vw 3vh 10vw;
+  padding: 2vh var(--main-section-padding) 3vh var(--main-section-padding);
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg, var(--secondary-color), var(--black)) var(--secondary-color);
 }
 
 .divider-container {
-  height: 40vh;
+  height: var(--divider-container-height);
   overflow: hidden;
 }
 
@@ -318,7 +371,6 @@ a.go-down:hover {
 }
 
 /* ADDITIONAL TYPOGRAPHY */
-
 .fading-line {
   border: none;
   border-bottom: 1px solid transparent;
@@ -331,13 +383,13 @@ h2 {
 }
 
 #site-title h1 {
-  font-size: 15vw;
+  font-size: var(--site-title-primary-font-size);
   margin-bottom: 2vh;
   letter-spacing: 1vw;
 }
 
 #site-title h2 {
-  font-size: 4vw;
+  font-size: var(--site-title-secondary-font-size);
 }
 
 #site-title h2 em,
@@ -447,47 +499,16 @@ legend {
   text-transform: uppercase;
 }
 
-/* MEDIA QUERIES */
-/* This stylesheet adopts a mobile first approach. Breakpoints adopted from https://www.w3schools.com/css/css3_mediaqueries.asp */
-
-/* Very small screens (600px and up)*/
+/* ADDITIONAL MEDIA QUERIES */
+/* Small screens (600px and up)*/
 @media only screen and (min-width: 600px) {
-  .divider-container {
-    height: 30vh;
-  }
-
   .divider-image {
     background-size: 100% auto;
   }
 }
 
-/* Small screens (768px and up) */
-@media only screen and (min-width: 768px) {
-  .main-section {
-    padding-left: 14vw;
-    padding-right: 14vw;
-  }
-
-  .divider-container {
-    height: 40vh;
-  }
-}
-
 /* Medium screens (992px and up) */
 @media only screen and (min-width: 992px) {
-  #site-title h1 {
-    font-size: 12vw;
-  }
-
-  #site-title h2 {
-    font-size: 3vw;
-  }
-
-  .main-section {
-    padding-left: 12vw;
-    padding-right: 12vw;
-  }
-
   .flex-item {
     flex: 50%;
   }
@@ -498,10 +519,6 @@ legend {
 
   .flex-item-40 {
     flex: 40%;
-  }
-
-  .divider-container {
-    height: 50vh;
   }
 
   /* The next to declarations make the larger group portrait appear next to the text instead of the smaller portrait in the middle of the text */
@@ -517,32 +534,8 @@ legend {
 
 /* Large Screens (1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #site-title h1 {
-    font-size: 10vw;
-  }
-
-  #site-title h2 {
-    font-size: 2.5vw;
-  }
-
-  .divider-container {
-    height: 60vh;
-  }
-
   /* This enables a hover effect for the hamburger icon on larger screens which doesn't work properly on touch screens */
   label.hamburger:hover .hamburger-line {
     background-color: var(--primary-color);
-  }
-}
-
-/* Very large screens (1400px and up) */
-@media only screen and (min-width: 1400px) {
-  .main-section {
-    padding-left: 15vw;
-    padding-right: 15vw;
-  }
-
-  .divider-container {
-    height: 62vh;
   }
 }
