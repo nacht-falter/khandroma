@@ -337,8 +337,7 @@ h2 {
 }
 
 #site-title h2 {
-  font-size: 5vw;
-  border: none;
+  font-size: 4vw;
 }
 
 #site-title h2 em,
@@ -465,6 +464,14 @@ legend {
 
 /* Medium screens (992px and up) */
 @media only screen and (min-width: 992px) {
+  #site-title h1 {
+    font-size: 12vw;
+  }
+
+  #site-title h2 {
+    font-size: 3vw;
+  }
+
   .main-section {
     padding-left: 12vw;
     padding-right: 12vw;
@@ -498,8 +505,14 @@ legend {
 }
 
 /* Large Screens (1200px and up) */
-/* 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #site-title h1 {
+    font-size: 10vw;
+  }
+
+  #site-title h2 {
+    font-size: 2.5vw;
+  }
 }
 
 /* Very large screens (1400px and up) */
