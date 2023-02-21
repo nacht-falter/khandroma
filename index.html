@@ -16,13 +16,16 @@
 
 <body>
   <header id="header">
-    <!-- Hamburger menu layout adapted from https://www.mediaevent.de/tutorial/css-transform.html -->
-    <input aria-label="Button to open main navigation" type="checkbox" id="hamburger">
-    <label for="hamburger" class="hamburger">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </label>
+    <!-- Hamburger menu icon. Layout adapted from https://www.mediaevent.de/tutorial/css-transform.html -->
+    <div id="menu icon">
+      <input aria-label="Button to open main navigation" type="checkbox" id="hamburger">
+      <label for="hamburger" class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+    </div>
+    <!-- Main navigation -->
     <nav class="main-nav">
       <ul id="menu">
         <li><a href="#about">About</a></li>
@@ -32,32 +35,37 @@
         <li><a href="#contact">Get in touch</a></li>
       </ul>
     </nav>
-    <a href="#header" title="Go to the top of the page" aria-label="Button to go to the top of the page"
-      class="go-up"><i class="fa-solid fa-chevron-up"></i></a>
+    <!-- Navigation buttons to scroll down the to of the page and to scroll down -->
     <a href="#about" title="Scroll down to content" aria-label="Button to scroll down to main content"
       class="go-down"><i class="fa-solid fa-chevron-down"></i></a>
+    <a href="#header" title="Go to the top of the page" aria-label="Button to go to the top of the page"
+      class="go-up"><i class="fa-solid fa-chevron-up"></i></a>
     <section id="hero">
       <div class="hero"></div>
     </section>
+    <!-- Site title and subtitle -->
     <div aria-label="Site title" id="site-title">
       <h1>khándroma</h1>
       <h2><i class="fa-solid fa-compact-disc"></i> New Album <span><em>Chrystal Math</em></span> out
         now!</h2>
     </div>
   </header>
+  <!-- Main content section -->
   <main>
+    <!-- Section containing information about the band -->
     <section id="about" class="main-section">
       <h2 class="fading-line">About</h2>
+      <!-- Container for css flexbox layout. Flexbox layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php -->
       <div class="flex-container">
         <div class="flex-item-60">
           <p class="first-paragraph">Khándroma is a groove-oriented, instrumental band from Freiburg, Germany.
-            Khándroma‘s music blends elements
-            from jazz, progressive rock, funk and metal with minimalistic, repeating patterns, creating a unique sound
-            and musical style.</p>
+            Khándroma‘s music blends elements from jazz, progressive rock, funk and metal with minimalistic, repeating
+            patterns, creating a unique sound and musical style.</p>
           <p>Since its formation in 2007, the band‘s core lineup has consisted of piano, electric bass, and drums, while
             past iterations of the band have featured additional instruments such as electric guitar, vocals/rap,
             synthesizer, percussion, and French horn. The current lineup consists of piano, saxophone, electric bass,
-            and drums.</p> <img class="group-portrait-small" src="assets/img/khandroma_landscape.jpg"
+            and drums.</p>
+          <img class="group-portrait-small" src="assets/img/khandroma_landscape.jpg"
             alt="Portrait of the four musicians of Khándroma">
           <p>Khándroma‘s compositions fluctuate between passages of explosive energy and etheral sonic textures. They
             foster awareness, induce trance, or provoke analysis. Khándroma's music is a powerful tool for open-minded
@@ -75,15 +83,19 @@
           <p><i class="fa-solid fa-drum"></i> Watch out for </i><a href="#news" title="Upcoming shows"
               aria-label="See upcoming show dates">upcoming show dates</a>.</p>
         </div>
+        <!-- Container for a group portrait of the band which is only displayed on larger screens -->
         <div class="flex-item-40 group-portrait-large" aria-label="Portrait of the four musicians of Khándroma">
         </div>
       </div>
     </section>
+    <!-- Image section separating content sections from each other -->
     <div id="divider-container-1" class="divider-container">
       <div aria-label="A decorative image of an electric bass" class="divider-image divider-image-1"></div>
     </div>
+    <!-- Section containg news about the band and upcoming show dates -->
     <section id="news" class="main-section">
       <div class="flex-container">
+        <!-- Subsection for news -->
         <div class="flex-item">
           <h2 class="fading-line">News</h2>
           <ul>
@@ -96,13 +108,14 @@
             <li><strong>3 March 2022:</strong>
               <ul>
                 <li>
-                  <strong> New album released</strong>: <i class="fa-solid fa-compact-disc"></i> <a href="#listen"
+                  <strong>New album released</strong>: <i class="fa-solid fa-compact-disc"></i> <a href="#listen"
                     title="Listen"><em>Chrystal Math</em></a>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
+        <!-- Subsection for upcoming shows -->
         <div class="flex-item">
           <h2 class="fading-line">Upcoming Shows</h2>
           <ul>
@@ -110,18 +123,22 @@
           </ul>
         </div>
       </div>
+      <!-- Subsection containing a link to the mailing list subscription form -->
       <div class="flex-item">
         <hr class="fading-line">
         <p><i class="fa-regular fa-paper-plane"></i> <a href="#subscribe"
             title="Subscribe to our mailing list">Subscribe to our mailing list</a> and never miss anything.</p>
       </div>
     </section>
+    <!-- Image section separating content sections from each other -->
     <div id="divider-container-2" class="divider-container">
       <div aria-label="A decorative image of a drum kit" class="divider-image divider-image-2"></div>
     </div>
+    <!-- Section containing embedded music players to listen to the band‘s albums -->
     <section id="listen" class="main-section">
       <h2 class="fading-line">Listen</h2>
       <div class="flex-container">
+        <!-- Subsections for music players -->
         <div class="flex-item">
           <h3>Chrystal Math (2022)</h3>
           <img class="album-artwork" src="assets/img/chrystal_math.jpg"
@@ -147,22 +164,25 @@
           </iframe>
         </div>
         <div class="flex-item">
+          <!-- Subsection with information on how to buy the band‘s music -->
           <h2 class="fading-line">Buy our music</h2>
           <p>Visit <i class="fab fa-bandcamp"></i> <a href="https://khandroma.bandcamp.com/" target="_blank"
               rel="noopener" title="Bandcamp"
-              aria-label="Download our music on Bandcamp (opens in a new tab)">Bandcamp</a> to download our music in
-            HD
+              aria-label="Download our music on Bandcamp (opens in a new tab)">Bandcamp</a> to download our music in HD
           </p>
           <p><a href="#contact" title="Get in touch">Contact us</a> to purchase a physical CD </p>
         </div>
       </div>
+      <!-- Image section separating content sections from each other -->
     </section>
     <div id="divider-container-3" class="divider-container">
       <div aria-label="A decorative image of a piano" class="divider-image divider-image-3"></div>
     </div>
+    <!-- Section containing embedded video players showing live performances of the band -->
     <section id="watch" class="main-section">
       <h2 class="fading-line">Watch</h2>
       <div class="flex-container">
+        <!-- Subsections for video players -->
         <div class="flex-item">
           <h3>Workshop concert teaser (2022)</h3>
           <iframe width="100%" height="300" src="https://www.youtube.com/embed/BPcOdWYbZ5U?rel=0"
@@ -195,21 +215,25 @@
             allowfullscreen>
           </iframe>
         </div>
+        <!-- Subsection containing a link to the band‘s YouTube channel -->
         <div class="flex-item">
           <hr class="fading-line">
           <p class="first-paragraph">Visit our <i class="fab fa-youtube"></i> <a
               href="https://www.youtube.com/@khandromamusik" target="_blank" rel="noopener" title="Visit us on YouTube"
-              aria-label="Visit us on YouTube (opens in a new tab) ">YouTube channel</a>
+              aria-label="Visit us on YouTube (opens in a new tab)">YouTube channel</a>
             for more videos.</p>
         </div>
       </div>
     </section>
+    <!-- Image section separating content sections from each other -->
     <div id="divider-container-4" class="divider-container">
       <div aria-label="A decorative image of a Saxophone" class="divider-image divider-image-4"></div>
     </div>
+    <!-- Section containing a contact form and a mailing list subscription form -->
     <section id="contact" class="main-section">
       <h2 class="fading-line">Get in Touch</h2>
       <div class="flex-container">
+        <!-- Subsection for contact form -->
         <div class="flex-item">
           <form method="post" action="https://formdump.codeinstitute.net/">
             <!-- The form action will have to be replaced before official release of the website -->
@@ -223,12 +247,12 @@
             </fieldset>
           </form>
         </div>
+        <!-- Subsection for mailing list subscription form -->
         <div class="flex-item">
-
           <form method="post" action="https://formdump.codeinstitute.net/">
+            <!-- The form action will have to be replaced before official release of the website -->
             <fieldset>
               <legend id="subscribe">Subscribe to our Mailing List</legend>
-              <!-- The form action will have to be replaced before official release of the website -->
               <input type="email" name="subscribe" id="subscribe" class="input"
                 aria-label="Enter email address to subscribe to our mailing list" placeholder="Your email address"
                 required>
@@ -239,6 +263,7 @@
       </div>
     </section>
   </main>
+  <!-- Footer containing links to social media platforms and a copyright statement -->
   <footer>
     <nav id="social">
       <ul>
@@ -252,22 +277,21 @@
         </li>
         <li>
           <a href="https://soundcloud.com/khandroma" target="_blank" rel="noopener" title="Visit us on SoundCloud"
-            aria-label="Visit us on SoundCloud (opens in a new tab) "><i class="fab fa-soundcloud"></i></a>
+            aria-label="Visit us on SoundCloud (opens in a new tab)"><i class="fab fa-soundcloud"></i></a>
         </li>
         <li>
           <a href="https://www.youtube.com/@khandromamusik" target="_blank" rel="noopener" title="Visit us on YouTube"
-            aria-label="Visit us on YouTube (opens in a new tab) "><i class="fab fa-youtube"></i></a>
+            aria-label="Visit us on YouTube (opens in a new tab)"><i class="fab fa-youtube"></i></a>
         </li>
         <li>
           <a href="https://open.spotify.com/artist/3mVAiTMUv1rHiF2vHqQp17" target="_blank" rel="noopener"
-            title="Visit us on Spotify" aria-label="Visit us on Spotify (opens in a new tab) "><i
+            title="Visit us on Spotify" aria-label="Visit us on Spotify (opens in a new tab)"><i
               class="fab fa-spotify"></i></a>
         </li>
       </ul>
     </nav>
-    <p aria-label="Copyright statement" id="copyright">
-      <small><i class="fa-solid fa-copyright"></i> Khándroma 2023</small>
-    </p>
+    <p aria-label="Copyright statement" id="copyright"> <small><i class="fa-solid fa-copyright"></i>Khándroma
+        2023</small></p>
   </footer>
 </body>
 
