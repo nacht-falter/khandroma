@@ -221,8 +221,9 @@ header {
 }
 
 /*--------------------------------
-Navigation
+NAVIGATION
 --------------------------------*/
+/* === Main Navigation === */
 /* Main navigation design adapted from https://www.mediaevent.de/tutorial/css-responsive-menu.html */
 .main-nav {
   height: auto;
@@ -265,6 +266,7 @@ Navigation
   color: var(--primary-color);
 }
 
+/* === Hamburger Menu Icon === */
 /* The following declarations style the hamburger icon and the animation to turn it into an X when clicked. */
 /* Hamburger icon design and animation adapted from https://www.mediaevent.de/tutorial/css-transform.html */
 label.hamburger {
@@ -316,11 +318,7 @@ input#hamburger {
   transform: translateY(-12px) rotate(45deg);
 }
 
-/* This fades out the go-up button, when the main navigation menu is open. */
-#hamburger:checked + .hamburger + .main-nav + a.go-up {
-  opacity: 0.5;
-}
-
+/* === Navigation Buttons === */
 /* Styles for the buttons to go to the top of the page and to scroll down */
 a.go-up {
   position: fixed;
@@ -336,6 +334,10 @@ a.go-up {
 
 a.go-up:hover {
   background: var(--darkgrey);
+}
+
+#hamburger:checked + .hamburger + .main-nav + a.go-up {
+  opacity: 0.5; /* This fades out the go-up button, when the main navigation menu is open. */
 }
 
 a.go-down {
