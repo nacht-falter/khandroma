@@ -161,7 +161,7 @@ MAIN LAYOUT
 .main-section {
   padding: 2vh var(--main-section-padding) 3vh var(--main-section-padding);
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
-  background: linear-gradient(135deg, var(--secondary-color), var(--black)) var(--secondary-color);
+  background: linear-gradient(135deg, var(--secondary-color), var(--black) 80%) var(--secondary-color);
 }
 
 .divider-container {
