@@ -31,6 +31,7 @@ VARIABLES
   --site-title-secondary-font-size: 4vw;
   --main-section-padding: 10vw;
   --divider-container-height: 40vh;
+  --divider-container-max-height: 450px;
 }
 
 /* Define main layout variables for responsive layout (other non-variable media queries at the end of the file) */
@@ -41,6 +42,7 @@ VARIABLES
 @media only screen and (min-width: 600px) {
   :root {
     --divider-container-height: 30vh;
+    --divider-container-max-height: 330px;
   }
 }
 
@@ -49,6 +51,7 @@ VARIABLES
   :root {
     --main-section-padding: 14vw;
     --divider-container-height: 40vh;
+    --divider-container-max-height: 430px;
   }
 }
 
@@ -59,6 +62,7 @@ VARIABLES
     --site-title-secondary-font-size: 3vw;
     --main-section-padding: 12vw;
     --divider-container-height: 50vh;
+    --divider-container-max-height: 530px;
   }
 }
 
@@ -68,6 +72,7 @@ VARIABLES
     --site-title-primary-font-size: 10vw;
     --site-title-secondary-font-size: 2.5vw;
     --divider-container-height: 60vh;
+    --divider-container-max-height: 630px;
   }
 }
 
@@ -76,6 +81,7 @@ VARIABLES
   :root {
     --main-section-padding: 15vw;
     --divider-container-height: 62vh;
+    --divider-container-max-height: 700px;
   }
 }
 
@@ -159,6 +165,7 @@ MAIN LAYOUT
 
 .divider-container {
   height: var(--divider-container-height);
+  max-height: var(--divider-container-max-height);
   overflow: hidden;
 }
 
