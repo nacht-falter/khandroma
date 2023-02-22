@@ -242,7 +242,8 @@ NAVIGATION
   z-index: 2;
 }
 
-/* This makes the main navigation appear, when the hamburger menu icon is clicked */
+/* This makes the main navigation appear, when the hamburger menu icon is clicked. */
+/* The hamburger icon is a actually a checkbox, which makes it possible for the menu to stay open even after moving the mouse or clicking somwhere else. */
 #hamburger:checked + .hamburger + .main-nav {
   opacity: 1;
   max-height: 100vh;
@@ -347,7 +348,6 @@ a.go-down {
   font-size: 150%;
   color: var(--off-white);
   text-align: center;
-  /* CSS animations from https://www.w3schools.com/css/css3_animations.asp */
   animation: scroll-arrow 1s alternate infinite ease-out;
 }
 
@@ -447,21 +447,21 @@ IMAGE STYLES
 }
 
 .divider-image-1 {
-  background-image: url(../img/bass.jpg);
-  animation-direction: alternate-reverse;
+  background-image: url(../img/bass.jpg); /* Stock image from: https://unsplash.com/photos/Fx5rrxSaUtI */
+  animation-direction: alternate-reverse; /* Make the animation go in the opposite direction to avoid synchronicity with other animations */
 }
 
 .divider-image-2 {
-  background-image: url(../img/drums.jpg);
+  background-image: url(../img/drums.jpg); /* Stock image from: https://unsplash.com/photos/9lfubBqLbRc */
 }
 
 .divider-image-3 {
-  background-image: url(../img/piano.jpg);
-  animation-direction: alternate-reverse;
+  background-image: url(../img/piano.jpg); /* Stock image from: https://unsplash.com/photos/NacLkmqiKnU */
+  animation-direction: alternate-reverse; /* Make the animation go in the opposite direction to avoid synchronicity with other animations */
 }
 
 .divider-image-4 {
-  background-image: url(../img/saxophone.jpg);
+  background-image: url(../img/saxophone.jpg); /* Stock image from: https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140/ */
 }
 
 .group-portrait-small {
@@ -546,7 +546,7 @@ ADDITIONAL MEDIA QUERIES
 
   /* The next to declarations make the larger group portrait appear next to the text instead of the smaller portrait in the middle of the text */
   .group-portrait-large {
-    background: url("../img/khandroma_portrait.jpg") no-repeat top center / 120% auto;
+    background: url("../img/khandroma_portrait.jpg") no-repeat top center / 120% auto; /* Foto by David Koetter */
     display: block;
   }
 
