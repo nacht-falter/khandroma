@@ -233,7 +233,7 @@ NAVIGATION
   width: 100vw;
   height: 100vh;
   max-height: 0;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,9 +273,8 @@ label.hamburger {
   display: block;
   width: 40px;
   height: 30px;
-  position: relative;
+  position: absolute;
   border-radius: 4px;
-  position: fixed;
   right: 30px;
   top: 30px;
   z-index: 3;
@@ -335,11 +334,6 @@ a.go-up {
 
 a.go-up:hover {
   background: var(--darkgrey);
-}
-
-#hamburger:checked ~ a.go-up {
-  /* CSS element1~element2 selector found at https://www.w3schools.com/cssref/sel_gen_sibling.php */
-  opacity: 0.5; /* This fades out the go-up button, when the main navigation menu is open. */
 }
 
 a.go-down {
