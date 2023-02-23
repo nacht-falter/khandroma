@@ -2,9 +2,9 @@
 This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to resource to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with the band.
 
 ![Khandroma website mockups](media/khandroma-website-mockups.jpg)
-The essential target groups of the website are potential new listeners, returning listeners/fans, booking agents, and other intersted groups such as music journalists.
+The essential target groups of the website are potential new listeners, returning listeners/fans, booking agents, and other interested groups such as music journalists.
 
-The central goals of the website are:
+The main goals of the website are:
 - to provide a central platform for fans, listeners and other interested groups, to access information about the band, their music and their current activities.
 - to present up-to-date information about the bands activities, such as the latest releases and upcoming shows.
 - to present the band's portfolio of music and live performance videos.
@@ -61,15 +61,15 @@ Fixed at the bottom right of the viewport there is a clearly visible button, acc
 #### Resposive Layout
 The website is fully responsive and features a flexible layout with a single column on small screens and two columns on larger screens.
 
-### Features to be implemented in the future: 
-#### Required features for an official release of the website:
+### Features to be implemented in the future
+#### Required features for an official release of the website
 - Automatically close main navigation when a navigation item is clicked. This is not possible with plain HTML/CSS and requires some JavaScript. Then it also makes sense to make the navigation menu sticky, so that it can be accessed from anywhere on the page.
 - Replace CI formdump form actions with an actual form handling method.   
 - Replace stock images in image sections with pictures of the actual musicians.
 - Add links to privacy policy page and imprint page in footer.
 - Deploy finished website to https://khandroma.de
 
-#### "Nice to have" features:
+#### "Nice to have" features
 - A photo gallery
 
 ## User Experience
@@ -178,6 +178,39 @@ Here are the final results of the validators:
 A report on the website generated with [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) initially showed a low performance value because the image files used on the website were to big. The images have since been replaced with more compressed versions (ensuring file sizes around 200kB), which has drastically improved the performance rating.
 
 [Chrome Lighthouse results](media/khandroma-lighthouse-results.pdf)
+
+### Further Testing
+- The website was tested on a variety of devices (Desktop, Laptop, iPad, and iPhone). The following browsers and operating systems have been tested: 
+
+	- macOS
+		- Firefox
+		- Google Chrome
+		- Safari
+	- Microsoft Windows
+		- Firefox
+		- Google Chrome
+		- Microsoft Edge 
+	- Linux
+		- Firefox
+		- Google Chrome
+	- iOS
+		- Safari
+		- Firefox
+  
+	The website worked as expected in all tested browsers, except for the browsers on Microsoft Windows, where the declaration `width: 100vh` on the hero image section caused a scrollbar to appear at the bottom of the page. This was fixed by setting the `width`  of the hero image to `100%`.
+- All links, buttons and forms where tested to make sure they work as expected.
+- Friends and family members were asked to review the site and documentation to point out any bugs or user experience issues.
+
+### Test user feedback:
+- Multiple test users reported, they were confused, when the main navigation did not disappear automatically, after a menu item was clicked. This functionality could be implemented in the future using JavaScript (see [Future features](#Features%20to%20be%20implemented%20in%20the%20Future)). To avoid this problem, the navigation, for now, stays at the top of the page. Users can navigate back to the top of the page using the go-up button at the bottom right of the page.
+
+### Known Bugs/Missing features
+- The main navigation does not close automatically, when a menu item is clicked, which is not good UX. As a workaround the main navigation sticks to the top of the page for now so that it does not cover the page contents after clicking on a menu item. In the future this should be fixed by using some JavaScript to make the navigation disappear when clicking on a menu item.
+- The hover effect on the hamburger button does not work properly on mobile devices, because hovering doesn't work with touchscreens. This feature is therefore disabled for smaller screens.
+- The animations on the divider images between the main content sections sometimes look a bit jittery. So far, no solution for this has been found. One possibility would be to remove the animations completely, but this would make the website appear much less dynamic and atmospheric.
+
+### Testing User Stories from User Experience Section
+All user stories from the UX section have been tested. The results of these tests can be found here: [Testing User Stories](user-stories-test.md)
 
 ## Deployment
 
