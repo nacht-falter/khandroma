@@ -226,3 +226,36 @@ The link to the live website can be found here: [https://nacht-falter.github.io/
 
 ## Credits
 
+### Code
+- The main navigation design and the hamburger menu icon animation were inspired by and adapted from: [https://www.mediaevent.de/tutorial/css-responsive-menu.html](https://www.mediaevent.de/tutorial/css-responsive-menu.html) and [https://www.mediaevent.de/tutorial/css-transform.html](https://www.mediaevent.de/tutorial/css-transform.html). All code from these sources was reviewed thoroughly and adapted to fit the specific needs of this website.
+- The use of CSS variables in general, and for media queries in particular, was inspired by:  [https://www.w3schools.com/css/css3_variables.asp](https://www.w3schools.com/css/css3_variables.asp) and [https://www.w3schools.com/css/css3_variables_mediaqueries.asp](https://www.w3schools.com/css/css3_variables_mediaqueries.asp )
+- Breakpoints for media queries were adopted from [https://www.w3schools.com/css/css3_mediaqueries.asp](https://www.w3schools.com/css/css3_mediaqueries.asp). One additional breakpoint was added for screens wider than 1400px.
+- The smooth scrolling feature was adapted from: [https://www.w3schools.com/cssref/pr_scroll-behavior.php](https://www.w3schools.com/cssref/pr_scroll-behavior.php)
+- The use of CSS gradients as background-images was inspired by: [https://www.w3schools.com/css/css3_gradients.asp](https://www.w3schools.com/css/css3_gradients.asp)
+
+### Content
+- All content was written by the developer. The text for the "About" section was adapted from the official Khándroma press kit.
+
+### Fonts
+- Satellite (main font): [https://freetypography.com/2011/08/28/free-font-satellite](https://freetypography.com/2011/08/28/free-font-satellite)
+- Prosto (only used for album title): [https://fonts.google.com/specimen/Prosto+One](https://fonts.google.com/specimen/Prosto+One)
+- FontAwesome (for icons): [https://fontawesome.com/](https://fontawesome.com/)
+
+### Media
+#### Images:
+- Band portrait foto by David Koetter 
+- Divider image stock fotos:
+	- Drums foto by Shawn Sim: [https://unsplash.com/photos/9lfubBqLbRc](https://unsplash.com/photos/9lfubBqLbRc)
+	- Electric Bass foto by Freestocks: [https://unsplash.com/photos/Fx5rrxSaUtI](https://unsplash.com/photos/Fx5rrxSaUtI)
+	- Saxophone foto by Oovstudio: [https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140](https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140/)
+	- Piano foto by Andrew Faires: [https://unsplash.com/photos/NacLkmqiKnU](https://unsplash.com/photos/NacLkmqiKnU)
+
+#### Music:
+All music embedded on the website by Khándroma (https://khandroma.de)
+
+#### Videos:
+All videos embedded in the website by Khándroma (https://khandroma.de)
+
+### Acknowledgements
+- I would like to thank my Code Institute mentor for his continuous support and helpful advice.
+- I would like to thank all Khándroma band members, family members, and friends who have tested the website for their helpful feedback and remarks.
