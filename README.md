@@ -58,7 +58,7 @@ The site footer presents links to the band's social media profiles and a copyrig
 #### Back-to-top button
 Fixed at the bottom right of the viewport there is a clearly visible button, accessible from everywhere on the page, which brings the user back to the top of the page. This button only appears after scrolling down to the main content.
 
-#### Resposive Layout
+#### Responsive Layout
 The website is fully responsive and features a flexible layout with a single column on small screens and two columns on larger screens.
 
 ### Features to be implemented in the future
@@ -165,7 +165,7 @@ The website uses two main colours:
 ### W3C Validators
 The [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were used to validate the website and to ensure there were no syntax errors in the code.
 
-The CSS validator initally only reported one issue with a CSS gradient declaration in the main stylesheet, which has been now fixed. Another issue came from the fontawesome.css stylesheet downloaded from https://fontawesome.com. That issue has been fixed by commenting out the lines of code in question. All remaining warnings refer to the stylesheets provided by FontAwesome.
+The CSS validator initially only reported one issue with a CSS gradient declaration in the main stylesheet, which has been now fixed. Another issue came from the fontawesome.css stylesheet downloaded from https://fontawesome.com. That issue has been fixed by commenting out the lines of code in question. All remaining warnings refer to the stylesheets provided by FontAwesome.
 
 The markup validator initially reported several issues with the site, most of which where either related to aria-label misuse or resulted from the embed code copied from YouTube and SoundCloud. All issues have now been fixed.
 
