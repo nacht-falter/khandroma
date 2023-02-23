@@ -102,7 +102,7 @@ The website is fully responsive and features a flexible layout with a single col
 ### Colour Scheme
 The website uses two main colours:
 - Pink (`#cf268a`) for accents like buttons and hover effects
-- Purple (`#391635`) as the main background color.
+- Purple (`#391635`) as the main background colour. This colour is used together with black (#111111) as colour gradients for the main section backgrounds, in order to give the site a more dynamic look.
 
 ### Typography
 - The font "Satellite" designed by Matt Yow, is used as the main font of the website. It is a sans serif typeface with a modern but elegant look. It is used for the site title, headings (regular for level 1 and 2 headings, uppercase for level 3 headings) and paragraphs.
