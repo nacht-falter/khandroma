@@ -202,7 +202,7 @@ A report on the website generated with [Chrome Lighthouse](https://developer.chr
 - Friends and family members were asked to review the site and documentation to point out any bugs or user experience issues.
 
 ### Test user feedback:
-- Multiple test users reported, they were confused, when the main navigation did not disappear automatically, after a menu item was clicked. This functionality could be implemented in the future using JavaScript (see [Future features](#Features%20to%20be%20implemented%20in%20the%20Future)). To avoid this problem, the navigation, for now, stays at the top of the page. Users can navigate back to the top of the page using the go-up button at the bottom right of the page.
+- Multiple test users reported, they were confused, when the main navigation did not disappear automatically, after a menu item was clicked. This functionality could be implemented in the future using JavaScript (see [Future features](#features-to-be-implemented-in-the-future)). To avoid this problem, the navigation, for now, stays at the top of the page. Users can navigate back to the top of the page using the go-up button at the bottom right of the page.
 
 ### Known Bugs/Missing features
 - The main navigation does not close automatically, when a menu item is clicked, which is not good UX. As a workaround the main navigation sticks to the top of the page for now so that it does not cover the page contents after clicking on a menu item. In the future this should be fixed by using some JavaScript to make the navigation disappear when clicking on a menu item.
