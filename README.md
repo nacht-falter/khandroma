@@ -116,7 +116,7 @@ The website uses two main colours:
 ### Images
 - The hero image on the website features the album artwork from the band's latest studio album, which not only makes the header visually appealing, but also adds thematic relevance to the header by reflecting the band's current activities.
 - A portrait photo of the band is presented in the "About" section.
-- To create musical vibes, large photos showing the instruments present in the band's current line up are used as decorative dividers between the main content sections to create a musical atmosphere. 
+- Large photos showing the instruments featured in the band's current line-up are used as decorative dividers between the main content sections to set the mood for the site and create a music related atmosphere. 
 
 ### Wireframes
 [Wireframe for smartphones](media/wireframes/khandroma_wireframe_phone.png)
