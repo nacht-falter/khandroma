@@ -15,6 +15,49 @@ The central goals of the website are:
 The live website can be found here: [https://nacht-falter.github.io/khandroma](https://nacht-falter.github.io/khandroma/index.html)
 
 ## Features
+### Existing Features
+ The website features a single page layout with visually distinct sections, allowing visitors to access all the information on the website without navigating multiple pages.
+#### Header with hero image, site title and navigation menu
+-  The website's header features the album artwork of the band's latest studio album.
+- As a website title the band's name and an announcement of the recently released album are presented in the header.
+- The header also features a navigation menu, which is hidden by default and can be accessed by clicking the hamburger menu icon in the top right corner. This presents a list of menu items linking to the main sections of the page.
+- The header also features an animated clickable navigation button at the bottom of the screen, which indicates to users where to find the main content of the website.
+![Site header screenshot](media/screenshots/screenshot-header.png)
+
+#### About Section
+The "About"section provides information on the band, their musical style and line-up and features a portrait image of the musicians.
+![About section screenshot](screenshot-about-section.png)
+
+#### News Section
+The second section presents news and updates on the band's activities as well as upcoming show dates. It also contains a link to the mailing list subscription form at the bottom of the page.
+![News section screenshot](media/screenshots/screenshot-news-section.png)
+
+#### Listen Section
+The "Listen" section provides embedded music players enabling visitors to listen to the bands music. It also presents options to purchase the band's music.
+![Listen section screenshot](media/screenshots/screenshot-listen-section.png)
+
+#### Watch Section
+The "Watch" section features embedded video players with videos from live performances of the band as well as a link to the bands YouTube channel.
+![Watch section screenshot](media/screenshots/screenshot-watch-section.png)
+
+#### Contact section
+The last section of the page provides a contact form for getting in touch with the band and a form for subscribing to the band's mailing list. It also contains information on booking and provides a link to downlad the band's rider as a PDF file.
+![Contact section screenshot](media/screenshots/screenshot-contact-section.png)
+
+#### Section dividers
+The website features large decorative images between the main sections, which are used to visually separate the sections and reflect the site's musical theme and aesthetic.
+![Divider image screenshot]\media/screenshots/screenshot-divider-image.png)
+
+#### Footer
+The site footer presents links to the band's social media profiles and a copyright notice.
+![Site footer screenshot](media/screenshots/screenshot-footer.png)
+
+#### Back-to-top button
+Fixed at the bottom right of the viewport there is a clearly visible button, accessible from everywhere on the page, which brings the user back to the top of the page. This button only appears after scrolling down to the main content.
+
+#### Resposive Layout
+The website is fully responsive and features a flexible layout with a single column on small screens and two columns on larger screens.
+![Responsive layout screenshot](media/screenshots/screenshot-responsive-single-column.png)
 
 ## User Experience
 
@@ -74,11 +117,11 @@ The website uses two main colours:
 - To create musical vibes, large photos showing the instruments present in the band's current line up are used as decorative dividers between the main content sections to create a musical atmosphere. 
 
 ### Wireframes
-[Wireframe for Smartphones](media/wireframes/khandroma_wireframe_phone.png)
+[Wireframe for smartphones](media/wireframes/khandroma_wireframe_phone.png)
 
-[Wireframe for Tablets](media/wireframes/khandroma_wireframe_tablet.png)
+[Wireframe for tablets](media/wireframes/khandroma_wireframe_tablet.png)
 
-[Wireframe for large Screens](media/wireframes/khandroma_wireframe_desktop.png)
+[Wireframe for large screens](media/wireframes/khandroma_wireframe_desktop.png)
 
 ## Technologies Used
 
