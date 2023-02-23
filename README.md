@@ -1,4 +1,18 @@
 # Khándroma Band Website
+This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with the band.
+
+![Khandroma website mockups](media/khandroma-website-mockups.png)
+The essential target groups of the website are potential new listeners, returning listeners/fans, booking agents, and other intersted groups such as music journalists.
+
+The central goals of the website are:
+- to provide a central platform for fans, listeners and other interested groups, to access information about the band, their music and their current activities.
+- to present up-to-date information about the bands activities, such as the latest releases and upcoming shows.
+- to present the band's portfolio of music and live performance videos.
+- to provide a visually appealing and professional looking online presence for the band, representing their artistic and musical style.
+- to bring together the band's online content and social media profiles in one central place. 
+- to provide means of getting in touch with the band for fans, listeners and booking agents or journalists alike.
+
+The live website can be found here: [https://nacht-falter.github.io/khandroma](https://nacht-falter.github.io/khandroma/index.html)
 
 ## Features
 
