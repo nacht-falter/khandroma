@@ -74,11 +74,11 @@ The website uses two main colours:
 - To create musical vibes, large photos showing the instruments present in the band's current line up are used as decorative dividers between the main content sections to create a musical atmosphere. 
 
 ### Wireframes
-[Wireframe for Smartphones](khandroma_wireframe_phone.png)
+[Wireframe for Smartphones](media/wireframes/khandroma_wireframe_phone.png)
 
-[Wireframe for Tablets](khandroma_wireframe_tablet.png)
+[Wireframe for Tablets](media/wireframes/khandroma_wireframe_tablet.png)
 
-[Wireframe for large Screens](khandroma_wireframe_desktop.png)
+[Wireframe for large Screens](media/wireframes/khandroma_wireframe_desktop.png)
 
 ## Technologies Used
 
