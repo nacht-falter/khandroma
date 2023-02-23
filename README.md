@@ -75,10 +75,34 @@ The website uses two main colours:
 
 ### Wireframes
 [Wireframe for Smartphones](khandroma_wireframe_phone.png)
+
 [Wireframe for Tablets](khandroma_wireframe_tablet.png)
+
 [Wireframe for large Screens](khandroma_wireframe_desktop.png)
 
 ## Technologies Used
+
+### Languages
+- The website has been built with HTML and CSS. No JavaScript or other languages have been used.
+
+### Libraries and Software 
+#### [Font Awesome](https://fontawesome.com/)
+- Font Awesome was used throughout the website to add icons for aesthetic and UX purposes. The necessary files have been included in the assets/fontawesome folder to avoid loading them from an external resource each time.
+
+#### [Google Fonts](https://fonts.google.com/)
+- Google fonts was used to import the 'Prosto' font into the stylesheet. The font file has been included in the assets/fonts folder, to ensure that it does not have to be loaded from an external resource. 
+
+#### [Git](https://git-scm.com/)
+- Git was used for version control by commiting changes to Git and push them to GitHub from the command line.
+
+#### [GitHub](https://github.com/)
+- GitHub is used to store the projects code after being pushed from Git and to deploy the website to GitHub pages at: https://nacht-falter.github.io/khandroma
+
+#### [Pixelmator Pro](https://www.pixelmator.com/pro/)
+- Pixelmator Pro was used to resize and edit images and photos for the website. 
+
+#### [Balsamiq](https://balsamiq.com/)
+- Balsamiq was used to create the [wireframes](#wireframes) during the design process.
 
 ## Testing
 
