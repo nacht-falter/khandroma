@@ -1,5 +1,5 @@
 # Khándroma Band Website
-This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with the band.
+This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to resource to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with the band.
 
 ![Khandroma website mockups](media/khandroma-website-mockups.png)
 The essential target groups of the website are potential new listeners, returning listeners/fans, booking agents, and other intersted groups such as music journalists.
@@ -56,6 +56,22 @@ The live website can be found here: [https://nacht-falter.github.io/khandroma](h
 - Provide contact information for listeners as well as booking agents through a contact form to make it easy for them to get in touch with the band.
 
 ## Design
+
+### Colour Scheme
+The website uses two main colours:
+- Pink (`#cf268a`) for accents like buttons and hover effects
+- Purple (`#391635`) as the main background color.
+
+### Typography
+- The font "Satellite" designed by Matt Yow, is used as the main font of the website. It is a sans serif typeface with a modern but elegant look. It is used for the site title, headings (regular for level 1 and 2 headings, uppercase for level 3 headings) and paragraphs.
+- As a secondary typeface the font "Prosto", provided by *Google Fonts*, is used for the album title of the latest album release.
+- These two fonts are also used on the cover of the fourth *Khándroma* studio album *Chrystal Math*.
+- The icon library *Font Awesome* is used for additional icons.
+
+### Images
+- The hero image on the website features the album artwork from the band's latest studio album, which not only makes the header visually appealing, but also adds thematic relevance to the header by reflecting the band's current activities.
+- A portrait photo of the band is presented in the "About" section.
+- To create musical vibes, large photos showing the instruments present in the band's current line up are used as decorative dividers between the main content sections to create a musical atmosphere. 
 
 ## Technologies Used
 
