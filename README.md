@@ -215,5 +215,13 @@ All user stories from the UX section have been tested. The results of these test
 ## Deployment
 
 ### GitHub Pages
+The site was deployed using GitHub pages. The steps used to the site deploy are as follows:
+
+- Go to GitHub repository at https://github.com/nacht-falter/khandroma  
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Main Branch
+- Once the Main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The link to the live website can be found here: [https://nacht-falter.github.io/khandroma](https://nacht-falter.github.io/khandroma/index.html)
 
 ## Credits
