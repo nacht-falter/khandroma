@@ -10,7 +10,7 @@ The central goals of the website are:
 - to present the band's portfolio of music and live performance videos.
 - to provide a visually appealing and professional looking online presence for the band, representing their artistic and musical style.
 - to bring together the band's online content and social media profiles in one central place. 
-- to provide means of getting in touch with the band for fans, listeners and booking agents or journalists alike.
+- to provide means of getting in touch with the band for fans, listeners, and booking agents or journalists alike.
 
 The live website can be found here: [https://nacht-falter.github.io/khandroma](https://nacht-falter.github.io/khandroma/index.html)
 
@@ -72,6 +72,11 @@ The website uses two main colours:
 - The hero image on the website features the album artwork from the band's latest studio album, which not only makes the header visually appealing, but also adds thematic relevance to the header by reflecting the band's current activities.
 - A portrait photo of the band is presented in the "About" section.
 - To create musical vibes, large photos showing the instruments present in the band's current line up are used as decorative dividers between the main content sections to create a musical atmosphere. 
+
+### Wireframes
+[Wireframe for Smartphones](khandroma_wireframe_phone.png)
+[Wireframe for Tablets](khandroma_wireframe_tablet.png)
+[Wireframe for large Screens](khandroma_wireframe_desktop.png)
 
 ## Technologies Used
 
