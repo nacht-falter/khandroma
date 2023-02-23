@@ -26,7 +26,7 @@ The live website can be found here: [https://nacht-falter.github.io/khandroma](h
 
 #### About Section
 The "About"section provides information on the band, their musical style and line-up and features a portrait image of the musicians.
-![About section screenshot](screenshot-about-section.png)
+![About section screenshot](media/screenshots/screenshot-about-section.png)
 
 #### News Section
 The second section presents news and updates on the band's activities as well as upcoming show dates. It also contains a link to the mailing list subscription form at the bottom of the page.
@@ -46,7 +46,7 @@ The last section of the page provides a contact form for getting in touch with t
 
 #### Section dividers
 The website features large decorative images between the main sections, which are used to visually separate the sections and reflect the site's musical theme and aesthetic.
-![Divider image screenshot]\media/screenshots/screenshot-divider-image.png)
+![Divider image screenshot](media/screenshots/screenshot-divider-image.png)
 
 #### Footer
 The site footer presents links to the band's social media profiles and a copyright notice.
@@ -57,7 +57,6 @@ Fixed at the bottom right of the viewport there is a clearly visible button, acc
 
 #### Resposive Layout
 The website is fully responsive and features a flexible layout with a single column on small screens and two columns on larger screens.
-![Responsive layout screenshot](media/screenshots/screenshot-responsive-single-column.png)
 
 ## User Experience
 
