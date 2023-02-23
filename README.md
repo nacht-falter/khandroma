@@ -162,6 +162,23 @@ The website uses two main colours:
 
 ## Testing
 
+### W3C Validators
+The [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were used to validate the website and to ensure there were no syntax errors in the code.
+
+The CSS validator initally only reported one issue with a CSS gradient declaration in the main stylesheet, which has been now fixed. Another issue came from the fontawesome.css stylesheet downloaded from https://fontawesome.com. That issue has been fixed by commenting out the lines of code in question. All remaining warnings refer to the stylesheets provided by FontAwesome.
+
+The markup validator initially reported several issues with the site, most of which where either related to aria-label misuse or resulted from the embed code copied from YouTube and SoundCloud. All issues have now been fixed.
+
+Here are the final results of the validators:
+
+- [W3C Markup Validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnacht-falter.github.io%2Fkhandroma%2Findex.html) 
+- [W3C CSS Validator results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnacht-falter.github.io%2Fkhandroma%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Chrome Lighthouse
+A report on the website generated with [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) initially showed a low performance value because the image files used on the website were to big. The images have since been replaced with more compressed versions (ensuring file sizes around 200kB), which has drastically improved the performance rating.
+
+[Chrome Lighthouse results](media/khandroma-lighthouse-results.pdf)
+
 ## Deployment
 
 ### GitHub Pages
