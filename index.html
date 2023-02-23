@@ -26,20 +26,20 @@
     </label>
     <!-- Main navigation -->
     <nav class="main-nav">
-      <ul id="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News & Upcoming Shows</a></li>
-        <li><a href="#listen">Listen</a></li>
-        <li><a href="#watch">Watch</a></li>
-        <li><a href="#contact">Get in touch</a></li>
+      <ul id="main-nav-menu">
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#news-section">News & Upcoming Shows</a></li>
+        <li><a href="#listen-section">Listen</a></li>
+        <li><a href="#watch-section">Watch</a></li>
+        <li><a href="#contact-section">Get in touch</a></li>
       </ul>
     </nav>
     <!-- Navigation buttons to scroll down to the main content and to go back the top of the page -->
-    <a href="#about" title="Scroll down to content" aria-label="Button to scroll down to main content"
-      class="go-down"><i class="fa-solid fa-chevron-down"></i></a>
+    <a href="#about-section" title="Scroll down to content" aria-label="Button to scroll down to main content"
+      class="go-down-button"><i class="fa-solid fa-chevron-down"></i></a>
     <a href="#header" title="Go to the top of the page" aria-label="Button to go to the top of the page"
-      class="go-up"><i class="fa-solid fa-chevron-up"></i></a>
-    <section aria-label="Hero image for the site header" id="hero">
+      class="go-up-button"><i class="fa-solid fa-chevron-up"></i></a>
+    <section aria-label="Hero image for the site header" id="hero-section">
       <div class="hero-image"></div>
     </section>
     <!-- Site title and subtitle -->
@@ -52,7 +52,7 @@
   <!-- Main content section -->
   <main>
     <!-- Section containing information about the band -->
-    <section id="about" class="main-section">
+    <section id="about-section" class="main-section">
       <h2 class="fading-line">About</h2>
       <!-- Container for css flexbox layout. Flexbox layout adapted from https://www.w3schools.com/cssref/css3_pr_flex.php -->
       <div class="flex-container">
@@ -76,11 +76,11 @@
             different aspects of the band's signature sound. The latest album – Chrystal Math – presents the unique
             Khándroma style more concisely than previous releases, while still remaining true to the band's distinctive
             musical identity.</p>
-          <p><i class="fa-solid fa-record-vinyl"></i> Check out the complete <a href="#listen" title="Listen"
+          <p><i class="fa-solid fa-record-vinyl"></i> Check out the complete <a href="#listen-section" title="Listen"
               aria-label="Go to listen section on this page">music catalogue</a>.</p>
           <hr class="fading-line">
           <p>Khándroma can be heard live on a regular basis in their own rehearsal and concert space in Freiburg.</p>
-          <p><i class="fa-solid fa-drum"></i> Watch out for <a href="#news" title="Upcoming shows"
+          <p><i class="fa-solid fa-drum"></i> Watch out for <a href="#news-section" title="Upcoming shows"
               aria-label="See upcoming show dates">upcoming show dates</a>.</p>
         </div>
         <!-- Container for a group portrait of the band which is only displayed on larger screens -->
@@ -93,7 +93,7 @@
       <div class="divider-image divider-image-1"></div>
     </div>
     <!-- Section containg news about the band and upcoming show dates -->
-    <section id="news" class="main-section">
+    <section id="news-section" class="main-section">
       <div class="flex-container">
         <!-- Subsection for news -->
         <div class="flex-item">
@@ -108,7 +108,7 @@
             <li><strong>3 March 2022:</strong>
               <ul>
                 <li>
-                  <strong>New album released</strong>: <i class="fa-solid fa-compact-disc"></i> <a href="#listen"
+                  <strong>New album released</strong>: <i class="fa-solid fa-compact-disc"></i> <a href="#listen-section"
                     title="Listen"><em>Chrystal Math</em></a>
                 </li>
               </ul>
@@ -135,7 +135,7 @@
       <div class="divider-image divider-image-2"></div>
     </div>
     <!-- Section containing embedded music players to listen to the band's albums -->
-    <section id="listen" class="main-section">
+    <section id="listen-section" class="main-section">
       <h2 class="fading-line">Listen</h2>
       <div class="flex-container">
         <!-- Subsections for music players -->
@@ -170,7 +170,7 @@
               rel="noopener" title="Bandcamp"
               aria-label="Download our music on Bandcamp (opens in a new tab)">Bandcamp</a> to download our music in HD
           </p>
-          <p><a href="#contact" title="Get in touch">Contact us</a> to purchase a physical CD </p>
+          <p><a href="#contact-section" title="Get in touch">Contact us</a> to purchase a physical CD </p>
         </div>
       </div>
       <!-- Image section separating content sections from each other -->
@@ -179,7 +179,7 @@
       <div class="divider-image divider-image-3"></div>
     </div>
     <!-- Section containing embedded video players showing live performances of the band -->
-    <section id="watch" class="main-section">
+    <section id="watch-section" class="main-section">
       <h2 class="fading-line">Watch</h2>
       <div class="flex-container">
         <!-- Subsections for video players -->
@@ -226,7 +226,7 @@
       <div class="divider-image divider-image-4"></div>
     </div>
     <!-- Section containing a contact form and a mailing list subscription form -->
-    <section id="contact" class="main-section">
+    <section id="contact-section" class="main-section">
       <h2 class="fading-line">Get in Touch</h2>
       <div class="flex-container">
         <!-- Subsection for contact form -->
@@ -268,7 +268,7 @@
   </main>
   <!-- Footer containing links to social media platforms and a copyright statement -->
   <footer>
-    <nav id="social">
+    <nav id="social-links">
       <ul>
         <li>
           <a href="https://facebook.com/khandromamusic" target="_blank" rel="noopener" title="Visit us on Facebook"
@@ -293,8 +293,7 @@
         </li>
       </ul>
     </nav>
-    <p id="copyright"> <small><i class="fa-solid fa-copyright"></i> Khándroma
-        2023</small></p>
+    <p id="copyright-notice"> <small><i class="fa-solid fa-copyright"></i> Khándroma 2023</small></p>
   </footer>
 </body>
 
