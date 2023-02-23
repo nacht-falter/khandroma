@@ -119,7 +119,7 @@ The website uses two main colours:
 - Purple (`#391635`) as the main background colour. This colour is used together with black (#111111) as colour gradients for the main section backgrounds, in order to give the site a more dynamic look.
 
 ### Typography
-- The font "Satellite" designed by Matt Yow, is used as the main font of the website. It is a sans serif typeface with a modern but elegant look. It is used for the site title, headings (regular for level 1 and 2 headings, uppercase for level 3 headings) and paragraphs.
+- The font "Satellite" designed by Matt Yow, is used as the main font of the website. It is a sans serif typeface with a modern, yet elegant look. It is used for the site title, headings (regular for level 1 and 2 headings, uppercase for level 3 headings) and paragraphs. [(Go to Credits section for font source)](#fonts)
 - As a secondary typeface the font "Prosto", provided by *Google Fonts*, is used for the album title of the latest album release.
 - These two fonts are also used on the cover of the fourth *Khándroma* studio album *Chrystal Math*.
 - The icon library *Font Awesome* is used for additional icons.
@@ -177,7 +177,7 @@ Here are the final results of the validators:
 ### Chrome Lighthouse
 A report on the website generated with [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) initially showed a low performance value because the image files used on the website were to big. The images have since been replaced with more compressed versions (ensuring file sizes around 200kB), which has drastically improved the performance rating.
 
-[Chrome Lighthouse results](media/khandroma-lighthouse-results.pdf)
+[Chrome Lighthouse results](media/testing/khandroma-lighthouse-results.pdf)
 
 ### Further Testing
 - The website was tested on a variety of devices (Desktop, Laptop, iPad, and iPhone). The following browsers and operating systems have been tested: 
@@ -210,7 +210,7 @@ A report on the website generated with [Chrome Lighthouse](https://developer.chr
 - The animations on the divider images between the main content sections sometimes look a bit jittery. So far, no solution for this has been found. One possibility would be to remove the animations completely, but this would make the website appear much less dynamic and atmospheric.
 
 ### Testing User Stories from User Experience Section
-All user stories from the UX section have been tested. The results of these tests can be found here: [Testing User Stories](user-stories-test.md)
+All user stories from the UX section have been tested. The results of these tests can be found here: [Testing User Stories](media/testing/user-stories-test.md)
 
 ## Deployment
 
@@ -225,3 +225,4 @@ The site was deployed using GitHub pages. The steps used to the site deploy are 
 The link to the live website can be found here: [https://nacht-falter.github.io/khandroma](https://nacht-falter.github.io/khandroma/index.html)
 
 ## Credits
+
