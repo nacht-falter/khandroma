@@ -61,6 +61,17 @@ Fixed at the bottom right of the viewport there is a clearly visible button, acc
 #### Resposive Layout
 The website is fully responsive and features a flexible layout with a single column on small screens and two columns on larger screens.
 
+### Features to be implemented in the future: 
+#### Required features for an official release of the website:
+- Automatically close main navigation when a navigation item is clicked. This is not possible with plain HTML/CSS and requires some JavaScript. Then it also makes sense to make the navigation menu sticky, so that it can be accessed from anywhere on the page.
+- Replace CI formdump form actions with an actual form handling method.   
+- Replace stock images in image sections with pictures of the actual musicians.
+- Add links to privacy policy page and imprint page in footer.
+- Deploy finished website to https://khandroma.de
+
+#### "Nice to have" features:
+- A photo gallery
+
 ## User Experience
 
 ### User stories
