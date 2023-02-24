@@ -29,7 +29,8 @@ VARIABLES
   /* Set default values for main layout elements */
   --site-title-primary-font-size: 15vw;
   --site-title-secondary-font-size: 4vw;
-  --main-section-padding: 10vw;
+  --main-section-left-padding: 10vw;
+  --main-section-right-padding: 10vw;
   --divider-container-height: 40vh;
   --divider-container-max-height: 450px;
 }
@@ -49,7 +50,8 @@ VARIABLES
 /* Slightly larger screens (768px and up)*/
 @media only screen and (min-width: 768px) {
   :root {
-    --main-section-padding: 14vw;
+    --main-section-left-padding: 15.5vw;
+    --main-section-right-padding: 15.5vw;
     --divider-container-height: 40vh;
     --divider-container-max-height: 430px;
   }
@@ -60,7 +62,8 @@ VARIABLES
   :root {
     --site-title-primary-font-size: 12vw;
     --site-title-secondary-font-size: 3vw;
-    --main-section-padding: 12vw;
+    --main-section-left-padding: 14vw;
+    --main-section-right-padding: 11vw;
     --divider-container-height: 50vh;
     --divider-container-max-height: 530px;
   }
@@ -79,7 +82,8 @@ VARIABLES
 /* Very large screens (1400px and up) */
 @media only screen and (min-width: 1400px) {
   :root {
-    --main-section-padding: 15vw;
+    --main-section-left-padding: 18vw;
+    --main-section-right-padding: 15vw;
     --divider-container-height: 62vh;
     --divider-container-max-height: 700px;
   }
@@ -160,7 +164,7 @@ iframe {
 MAIN LAYOUT
 --------------------------------*/
 .main-section {
-  padding: 2vh var(--main-section-padding) 3vh var(--main-section-padding);
+  padding: 2vh var(--main-section-right-padding) 3vh var(--main-section-left-padding);
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg, var(--secondary-color), var(--black) 80%) var(--secondary-color);
 }
@@ -184,7 +188,7 @@ FLEXBOX LAYOUT
 .flex-item-60,
 .flex-item-40 {
   flex: 100%;
-  padding: 0 3vw 3vw 0;
+  padding-bottom: 3vh;
 }
 
 /*--------------------------------
@@ -536,6 +540,7 @@ ADDITIONAL MEDIA QUERIES
 
 /* Medium screens (992px and up) */
 @media only screen and (min-width: 992px) {
+  /* Switch to two column flexbox layout */
   .flex-item {
     flex: 50%;
   }
@@ -546,6 +551,12 @@ ADDITIONAL MEDIA QUERIES
 
   .flex-item-40 {
     flex: 40%;
+  }
+
+  .flex-item,
+  .flex-item-60,
+  .flex-item-40 {
+    padding-right: 3vw;
   }
 
   /* The next to declarations make the larger group portrait appear next to the text instead of the smaller portrait in the middle of the text */
