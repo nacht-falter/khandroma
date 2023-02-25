@@ -164,7 +164,7 @@ iframe {
 MAIN LAYOUT
 --------------------------------*/
 .main-section {
-  padding: 2vh var(--main-section-right-padding) 3vh var(--main-section-left-padding);
+  padding: 2rem var(--main-section-right-padding) 2rem var(--main-section-left-padding);
   /* CSS gradients adapted from https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg, var(--secondary-color), var(--black) 80%) var(--secondary-color);
 }
