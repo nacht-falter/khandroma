@@ -178,7 +178,7 @@ Here are the final results of the validators:
 ### Chrome Lighthouse
 A report on the website generated with [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) initially showed a low performance value because the image files used on the website were to big. The images have since been replaced with more compressed versions (ensuring file sizes around 200kB), which has drastically improved the performance rating.
 
-![Lighthouse results summary](khandroma-lighthouse-summary.png)
+![Lighthouse results summary](media/testing/khandroma-lighthouse-summary.png)
 
 [Detailed Chrome Lighthouse results](media/testing/khandroma-lighthouse-results.pdf)
 
