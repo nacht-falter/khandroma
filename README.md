@@ -199,9 +199,9 @@ A report on the website generated with [Chrome Lighthouse](https://developer.chr
 	- iOS
 		- Safari
 		- Firefox
-	  - iPadOS
-		  - Safari
-		  - Firefox
+	- iPadOS
+		- Safari
+		- Firefox
   
 - The website worked as expected in all tested browsers, with two exceptions:
 	1. In  all browsers on Microsoft Windows, the declaration `width: 100vh` on the hero image section caused a scrollbar to appear at the bottom of the page. This was fixed by setting the `width`  of the hero image to `100%`.
