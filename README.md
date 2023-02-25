@@ -203,7 +203,7 @@ A report on the website generated with [Chrome Lighthouse](https://developer.chr
   
 - The website worked as expected in all tested browsers, with two exceptions:
 	1. In  all browsers on Microsoft Windows, the declaration `width: 100vh` on the hero image section caused a scrollbar to appear at the bottom of the page. This was fixed by setting the `width`  of the hero image to `100%`.
-	2. On iPadOS the `text-shadow` effect on the site title was not displayed correctly. Since the intended possitive effect on readability was negligeable on all devices, the issue was resolved by removing the declaration completely. 
+	2. On iPadOS the `text-shadow` effect on the site title was not displayed correctly. Since the intended possitive effect on readability was negligible on all devices, the issue was resolved by removing the declaration completely. 
 - All links, buttons and forms where tested to make sure they work as expected.
 - Friends and family members were asked to review the site and documentation to point out any bugs or user experience issues.
 
