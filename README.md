@@ -223,7 +223,7 @@ All user stories from the UX section have been tested. The results of these test
 ## Deployment
 
 ### GitHub Pages
-The site was deployed using GitHub pages. The steps used to the site deploy are as follows:
+The site was deployed using GitHub pages. The steps used to deploy the site are as follows:
 
 - Go to GitHub repository at https://github.com/nacht-falter/khandroma  
 - In the GitHub repository, navigate to the Settings tab
@@ -251,12 +251,12 @@ The link to the live website can be found here: [https://nacht-falter.github.io/
 
 ### Media
 #### Images:
-- Band portrait foto by David Koetter 
-- Divider image stock fotos:
-	- Drums foto by Shawn Sim: [https://unsplash.com/photos/9lfubBqLbRc](https://unsplash.com/photos/9lfubBqLbRc)
-	- Electric Bass foto by Freestocks: [https://unsplash.com/photos/Fx5rrxSaUtI](https://unsplash.com/photos/Fx5rrxSaUtI)
-	- Saxophone foto by Oovstudio: [https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140](https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140/)
-	- Piano foto by Andrew Faires: [https://unsplash.com/photos/NacLkmqiKnU](https://unsplash.com/photos/NacLkmqiKnU)
+- Band portrait photo by David Koetter 
+- Divider image stock photos:
+	- Drums photo by Shawn Sim: [https://unsplash.com/photos/9lfubBqLbRc](https://unsplash.com/photos/9lfubBqLbRc)
+	- Electric Bass photo by Freestocks: [https://unsplash.com/photos/Fx5rrxSaUtI](https://unsplash.com/photos/Fx5rrxSaUtI)
+	- Saxophone photo by Oovstudio: [https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140](https://pixabay.com/photos/sax-instrument-saxophone-jazz-4372140/)
+	- Piano photo by Andrew Faires: [https://unsplash.com/photos/NacLkmqiKnU](https://unsplash.com/photos/NacLkmqiKnU)
 
 #### Music:
 All music embedded on the website by Khándroma (https://khandroma.de)
