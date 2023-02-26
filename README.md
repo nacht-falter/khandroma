@@ -70,7 +70,6 @@ The website is fully responsive and features a flexible layout with a single col
 - Deploy finished website to https://khandroma.de
 
 #### "Nice to have" features
-- A favicon
 - A photo gallery
 
 ## User Experience
