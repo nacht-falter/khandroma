@@ -1,5 +1,5 @@
 # Khándroma Band Website
-This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to resource to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with the band.
+This is the official website of the band *Khándroma* from Freiburg, Germany. It is the go-to resource to get information about the band, to stay informed about the band's recent activities like new releases or upcoming shows, and to listen to the band's music or watch videos of live performances. The website provides easy access to the band's social media profiles and options for getting in touch with them.
 
 ![Khandroma website mockups](media/khandroma-website-mockups.jpg)
 The essential target groups of the website are potential new listeners, returning listeners/fans, booking agents, and other interested groups such as music journalists.
